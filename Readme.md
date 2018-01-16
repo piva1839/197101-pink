@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Обоянский](https://up.htmlacademy.ru/adaptive/13/user/197101).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Малиновская`.
 
 ---
 
