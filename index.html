@@ -11,24 +11,24 @@
         <div class="menu-bar__logo">
           <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="http://placehold.it/150x100" alt="Logo" width="150" height="100"></a>
         </div>
-        <button class="menu-bar__main-nav-toggle">
+        <button class="menu-bar__toggle">
           Открыть меню
         </button>
       </div>
       <div class="main-nav__wrapper">
         <nav class="main-nav">
-          <ul class="main-nav__list  menu-list">
-            <li class="menu-list__item  menu-list__item--active">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
               <a class="menu-list__link" href="#">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Фотографии</a>
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Конкурс</a>
+              <a class="menu-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">Html academy</a>
+              <a class="menu-list__link" href="https://htmlacademy.ru/profile/piva1839">Html academy</a>
             </li>
           </ul>
         </nav>
@@ -36,7 +36,7 @@
     </header>
 
     <section class="main-promo">
-      <div class="main-promo__inner">
+      <div class="main-promo__wrapper">
         <h1 class="visually-hidden">
           Взгляните на мир иначе!
         </h1>
@@ -45,64 +45,70 @@
     </section>
 
     <section class="download">
-      <button class="button button--download">
-        Скачать приложение
-      </button>
-      <div class="download__links">
-        <a class="download__link" href="#">Apple</a>
-        <a class="download__link" href="#">Android</a>
-        <a class="download__link" href="#">Windows</a>
+      <div class="download__wrapper">
+        <a class="button button--download" href="https://www.apple.com/">
+          Скачать приложение
+        </a>
+        <div class="download__links">
+          <a class="download__link" href="https://www.apple.com/">Apple</a>
+          <a class="download__link" href="https://play.google.com/">Android</a>
+          <a class="download__link" href="https://www.microsoft.com/">Windows</a>
+        </div>
+        <p class="download__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
       </div>
-      <p class="download__description">
-        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
     </section>
 
     <section class="slogan">
-      <p class="slogan__content">
-        Устали от серости мегаполиса?
-      </p>
-      <p class="slogan__content">
-        Нам есть, что вам предложить!
-      </p>
+      <div class="slogan__wrapper">
+        <p class="slogan__content">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="slogan__content">
+          Нам есть, что вам предложить!
+        </p>
+      </div>
     </section>
 
     <section class="features">
-      <ul class="features__list">
-        <li class="features__item">
-          <b class="features__item-title">
-            Поднимает настроение
-          </b>
-          <p class="features__item-desc">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </li>
-        <li class="features__item">
-          <b class="features__item-title">
-            Меняет мир вокруг
-          </b>
-          <p class="features__item-desc">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </p>
-        </li>
-        <li class="features__item">
-          <b class="features__item-title">
-            Заводит новых друзей
-          </b>
-          <p class="features__item-desc">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </li>
-      </ul>
-      <div class="features__illustration">
-        <img class="features__image" src="http://placehold.it/150x100" alt="Features image" width="150" height="100">
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item">
+            <b class="features__item-title">
+              Поднимает настроение
+            </b>
+            <p class="features__item-desc">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="features__item">
+            <b class="features__item-title">
+              Меняет мир вокруг
+            </b>
+            <p class="features__item-desc">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="features__item">
+            <b class="features__item-title">
+              Заводит новых друзей
+            </b>
+            <p class="features__item-desc">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <div class="features__image">
+          <img src="http://placehold.it/150x100" alt="Features image" width="150" height="100">
+        </div>
       </div>
     </section>
 
     <section class="reviews">
-      <div class="reviews__wrapper  slider">
-        <div class="reviews__list  slider__list">
-          <div class="reviews__item  slider__item">
+      <div class="reviews__wrapper slider">
+        <ul class="reviews__list slider__list">
+          <li class="reviews__item slider__item">
             <blockquote class="reviews__content">
               <cite class="reviews__title">
                 Николай Петров
@@ -111,8 +117,8 @@
                 Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
-          </div>
-          <div class="reviews__item  slider__item">
+          </li>
+          <li class="reviews__item slider__item">
             <blockquote class="reviews__content">
               <cite class="reviews__title">
                 Николай Петров
@@ -121,8 +127,8 @@
                 Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
-          </div>
-          <div class="reviews__item  slider__item">
+          </li>
+          <li class="reviews__item slider__item">
             <blockquote class="reviews__content">
               <cite class="reviews__title">
                 Николай Петров
@@ -131,15 +137,15 @@
                 Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
-          </div>
-          <p class="reviews__toggles  slider__toggles">
-            <button class="sliders__toggle" type="button">1</button>
-            <button class="sliders__toggle" type="button">2</button>
-            <button class="sliders__toggle" type="button">3</button>
+          </li>
+          <button class="reviews__prev" type="button" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button" type="button">Следующий отзыв</button>
+          <p class="reviews__toggles slider__toggles">
+            <button class="sliders__toggle" type="button" type="button">1</button>
+            <button class="sliders__toggle" type="button" type="button">2</button>
+            <button class="sliders__toggle" type="button" type="button">3</button>
           </p>
-        </div>
+        </ul>
       </div>
     </section>
 
@@ -184,30 +190,32 @@
     </section>
 
     <section class="main-contact">
-      <b class="main-contact__title">
-        Остались вопросы? Свяжитесь с нами!
-      </b>
-      <ul class="main-contact__list  contact-list">
-        <li class="contact-list__item">
-          <b class="contact-list__item-title">
-            Звоните
-          </b>
-          <a class="contact-list__item-phone">+7 (812) 555-66-66</a>
-        </li>
-        <li class="contact-list__item">
-          <b class="contact-list__item-title">
-            Пишите
-          </b>
-          <a class="contact-list__item-mail">mail@htmlacademy.ru</a>
-        </li>
-        <li class="contact-list__item">
-          <b class="contact-list__item-title">
-            Приезжайте в гости
-          </b>
-          <a class="contact-list__item-address">ул. Большая Конюшенная, 19/8</a>
-        </li>
-      </ul>
-      <div class="main-contact__map">
+      <div class="main-contact__wrapper">
+        <b class="main-contact__title">
+          Остались вопросы? Свяжитесь с нами!
+        </b>
+        <ul class="main-contact__list contact-list">
+          <li class="contact-list__item">
+            <b class="contact-list__item-title">
+              Звоните
+            </b>
+            <a class="contact-list__item-phone">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contact-list__item">
+            <b class="contact-list__item-title">
+              Пишите
+            </b>
+            <a class="contact-list__item-mail">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contact-list__item">
+            <b class="contact-list__item-title">
+              Приезжайте в гости
+            </b>
+            <a class="contact-list__item-address">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+        <div class="main-contact__map">
+        </div>
       </div>
     </section>
 

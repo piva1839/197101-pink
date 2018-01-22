@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="menu-bar">
+        <div class="menu-bar__logo">
+          <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="http://placehold.it/150x100" alt="Logo" width="150" height="100"></a>
+        </div>
+        <button class="menu-bar__toggle">
+          Открыть меню
+        </button>
+      </div>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="https://htmlacademy.ru/profile/piva1839">Html academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-title">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </h1>
+    </header>
+
+    <section class="story">
+      <div class="story__wrapper">
+        <form class="form" name="form" id="form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="form-block">
+            <legend class="form-block-title">
+              Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+            </legend>
+    					<label for="sername">Фамилия:</label>
+    					<input class="form-field" type="text" name="sername" id="sername" value="" placeholder="Укажите фамилию *" required>
+    					<label for="name">Имя:</label>
+    					<input class="form-field" type="text" name="name" id="name" value="" placeholder="Введите ваше имя *" required>
+              <label for="middle-name">Отчество:</label>
+    					<input class="form-field" type="text" name="middle-name" id="middle-name" value="" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="form-block">
+            <legend class="form-block-title">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+              <input class="form-field" type="checkbox" name="selfie" id="selfie" value="selfie" checked>
+              <label for="selfie">Сделал селфи с акулой</label>
+              <input class="form-field" type="checkbox" name="sun" id="sun" value="sun" checked>
+              <label for="sun">Обгорел на пляже</label>
+              <input class="form-field" type="checkbox" name="star" id="star" value="star">
+              <label for="star">Видел Чака Норриса</label>
+              <input class="form-field" type="checkbox" name="souvenir" id="souvenir" value="souvenir">
+              <label for="souvenir">Накупил сувениров</label>
+              <input class="form-field" type="checkbox" name="tower" id="tower" value="tower" checked>
+              <label for="tower">Удержал башню</label>
+              <input class="form-field" type="checkbox" name="hotel" id="hotel" value="hotel">
+              <label for="hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="form-block">
+            <legend class="form-block-title">
+            </legend>
+    					<label for="tel">Номер телефона</label>
+    					<input class="form-field" type="tel" name="tel" id="tel" value="" placeholder="Номер, пожалуйста">
+    					<label for="email">Адрес почты</label>
+    					<input class="form-field" type="email" name="email" id="email" value="" placeholder="Введите почту *" required>
+          </fieldset>
+          <fieldset class="form-block">
+            <legend class="form-block-title">
+              С каким приложением путешествовали?
+            </legend>
+              <input class="form-field" type="radio" name="user-app" id="ios" value="ios" checked>
+              <label for="ios">Pink для iOS</label>
+              <input class="form-field" type="radio" name="user-app" id="android" value="android">
+              <label for="android">Pink для Android</label>
+              <input class="form-field" type="radio" name="user-app" id="windows" value="windows">
+              <label for="windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="form-block">
+            <legend class="form-block-title">
+            </legend>
+              <label for="user-comment">Опишите свои эмоции</label>
+              <textarea class="form-area" name="user-comment" placeholder="Можно прям в красках, не стесняясь в выражениях" required>
+              </textarea>
+          </fieldset>
+          <button class="button button--form" type="button">
+            Отправить форму
+          </button>
+          <span class="required-fields"><sup>*</sup>-Обязательные поля</span>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__logo">
+        <img src="http://placehold.it/150x100" alt="Logo" width="150" height="100">
+      </div>
+      <div class="footer__social">
+        <a class="footer__social-icon footer__social-icon--tw">Twitter</a>
+        <a class="footer__social-icon footer__social-icon--fb">Facebook</a>
+        <a class="footer__social-icon footer__social-icon--yb">Youtube</a>
+      </div>
+      <div class="footer__copyright">
+        <a class="site-created" href="http://piva1839.github.io/">Разоаботано</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
