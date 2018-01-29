@@ -2,14 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HTML Academy Пинк">
+    <meta name="keywords" content="HTML Academy Пинк">
+    <title>Pink</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <div class="menu-bar">
         <div class="menu-bar__logo">
-          <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="http://placehold.it/150x100" alt="Logo" width="150" height="100"></a>
+          <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="img/logo-pink-white-mobile.svg" alt="Logo" width="76" height="23"></a>
         </div>
         <button class="menu-bar__toggle" type="button">
           Открыть меню
@@ -33,17 +40,23 @@
           </ul>
         </nav>
       </div>
+      <div class="main-promo__wrapper main-promo__wrapper--level-page">
+        <h1 class="page-title">
+          Фотографии пользователей
+        </h1>
+      </div>
     </header>
 
     <section class="gallery">
+      <p class="gallery__invitation">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
+      <div class="gallery__post">
+        <div class="gallery__panorama">
+          <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
+        </div>
       <div class="gallery__wrapper">
-        <p class="gallery__invitation">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
         <div class="gallery__post">
-          <div class="gallery__photo panorama">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100"></a>
-          </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
               Анна <span class="gallery__photo-time">(5 минут назад)</span>
@@ -58,7 +71,7 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100"></a>
+            <img src="img/photo-car-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -74,7 +87,7 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100"></a>
+            <img src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -90,7 +103,7 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100"></a>
+            <img src="img/photo-window-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -106,7 +119,7 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100"></a>
+            <img src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -122,7 +135,7 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100"></a>
+            <img src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -138,7 +151,7 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="http://placehold.it/150x100" alt="Панорама дня" width="150" height="100">
+            <img src="img/photo-wing-mobile@1x.jpg" alt="Панорама дня" width="280" height="180">
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -156,13 +169,13 @@
     </section>
 
     <section class="upload">
+      <p class="upload__invitation">
+        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+      </p>
       <div class="upload__wrapper">
-        <p class="upload__invitation">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
         <div class="upload__editor">
           <div class="upload__image">
-            <img src="http://placehold.it/150x100" alt="Загружаемое фото" width="150" height="100">
+            <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото" width="280" height="374">
           </div>
           <div class="upload__editor-tools">
             <button class="upload__editor-item upload__editor-item--resize" type="button">
@@ -186,10 +199,10 @@
       </div>
     </section>
 
-    <section class="footer">
+    <footer>
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="http://placehold.it/150x100" alt="Logo" width="150" height="100">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Logo" width="147" height="41">
         </div>
         <div class="footer__social">
           <a class="footer__social-icon footer__social-icon--tw">Twitter</a>

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+	display: table;
+	clear: both;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+@font-face {
+	font-family: "opensans";
+	src: url("../fonts/opensans.woff") format("truetype");
+	src: local("opensans"), url(../fonts/opensans.woff) format("woff"), url("../fonts/opensans.woff") format("truetype");
+}
+
+@font-face {
+	font-family: "opensansbold";
+	src: url("../fonts/opensansbold.woff") format("truetype");
+	src: local("opensansbold"), url(../fonts/opensansbold.woff) format("woff"), url("../fonts/opensansbold.woff") format("truetype");
+}
+
+@font-face {
+	font-family: "opensanslight";
+	src: url("../fonts/opensanslight.woff") format("truetype");
+	src: local("opensanslight"), url(../fonts/opensanslight.woff) format("woff"), url("../fonts/opensanslight.woff") format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, img {
+	margin: 0;
+	padding: 0;
+}
+
+@import "header.less";
+@import "download.less";
+@import "slogan.less";
+@import "features.less";
+@import "reviews.less";
+@import "price.less";
+@import "contact.less";
+@import "gallery.less";
+@import "upload.less";
+@import "footer.less";
+@import "story.less";
+@import "map.less";
