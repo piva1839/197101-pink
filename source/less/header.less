@@ -1,8 +1,29 @@
 .menu-bar {
-  padding: 20px; /* margin-bottom: -70px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* position: fixed; */
 
   background: #283645; /* rgba(0, 0, 0, 0.3) */
   border-bottom: 1px solid #000001;
+}
+
+.menu-bar__logo-image {
+  vertical-align: bottom;
+}
+
+.menu-bar__toggle {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+
+  background: url("../img/icon-menu-burger.svg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+  border: none;
+  outline: none;
+
+  font-size: 0px;
 }
 
 .menu-list {
@@ -29,21 +50,6 @@
   text-transform: uppercase;
 }
 
-.main-promo__wrapper {
-  position: relative;
-
-  display: flex;
-  min-height: 400px;
-
-  background: #2a3a4a url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: 100%;
-  background-position: top center;
-
-    &--level-page {
-      min-height: 235px;
-    }
-}
-
 .page-title {
   margin: auto;
   padding: 20px;
@@ -55,12 +61,88 @@
   text-align: center;
 }
 
-.main-promo__image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.promo-block {
+  position: relative;
+
+  min-height: 400px;
+
+  background: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom, center center;
+  background-size: auto, cover;
+
+    &--level-page {
+      min-height: 235px;
+
+      background: url("../img/bg-back-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
 }
 
-.main-promo__image img {
-  vertical-align: bottom;
+.download {
+  background: #1d2631;
+}
+
+.download__wrapper {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.button {
+  &--download {
+    width: 100%;
+    padding: 15px;
+
+    background: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+
+    font-family: "opensans", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.download__links {
+  margin: 15px 0;
+
+  text-align: center;
+}
+
+.download__link {
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  margin: 10px;
+
+  font-size: 0px;
+
+    &--apple {
+      background: url("../img/logo-apple.svg") no-repeat;
+      background-position: center;
+    }
+
+    &--android {
+      background: url("../img/logo-android.svg") no-repeat;
+      background-position: center 10px;
+    }
+
+    &--windows {
+      background: url("../img/logo-microsoft.svg") no-repeat;
+      background-position: center 13px;
+    }
+}
+
+.download__description {
+  font-family: "opensanslight", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #c8c9ca;
+  text-align: center;
 }

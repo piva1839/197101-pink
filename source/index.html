@@ -40,31 +40,29 @@
           </ul>
         </nav>
       </div>
-      <div class="main-promo__wrapper">
-        <h1 class="visually-hidden">
-          Взгляните на мир иначе!
-        </h1>
-        <div class="main-promo__image">
-          <img src="img/iphone-hand-mobile@1x.png" alt="Promo" width="258" height="286">
+      <div class="promo-block__wrapper">
+        <div class="promo-block">
+          <h1 class="visually-hidden">
+            Взгляните на мир иначе!
+          </h1>
+        </div>
+        <div class="download">
+          <div class="download__wrapper">
+            <a class="button button--download" href="https://www.apple.com/">
+              Скачать приложение
+            </a>
+            <div class="download__links">
+              <a class="download__link download__link--apple" href="https://www.apple.com/">Apple</a>
+              <a class="download__link download__link--android" href="https://play.google.com/">Android</a>
+              <a class="download__link download__link--windows" href="https://www.microsoft.com/">Windows</a>
+            </div>
+            <p class="download__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </div>
     </header>
-
-    <section class="download">
-      <div class="download__wrapper">
-        <a class="button button--download" href="https://www.apple.com/">
-          Скачать приложение
-        </a>
-        <div class="download__links">
-          <a class="download__link" href="https://www.apple.com/">Apple</a>
-          <a class="download__link" href="https://play.google.com/">Android</a>
-          <a class="download__link" href="https://www.microsoft.com/">Windows</a>
-        </div>
-        <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </div>
-    </section>
 
     <section class="slogan">
       <div class="slogan__wrapper">
@@ -152,14 +150,14 @@
         <button class="reviews__next" type="button">Следующий отзыв</button>
         -->
         <p class="reviews__toggles slider__toggles">
-          <button class="sliders__toggle" type="button">1</button>
+          <button class="sliders__toggle sliders__toggle--active" type="button">1</button>
           <button class="sliders__toggle" type="button">2</button>
           <button class="sliders__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
-    <section class="price"> <!-- как сделать слайдер-таблицу? -->
+    <section class="price">
       <div class="price__wrapper">
         <table class="price-table">
           <thead class="price-table__header">
@@ -168,44 +166,36 @@
                 <h3 class="price-table__title">Стандарт</h3>
                 <span class="price-table__cost">3,99 USD</span>
               </th>
-              <!--
-              <th class="price-table__col">
-                <b class="price-table__title">Стандарт</b>
+              <th class="price-table__col standart-price">
+                <h3 class="price-table__title">Стандарт</h3>
                 <span class="price-table__cost">3,99 USD</span>
               </th>
               <th class="price-table__col">
-                <b class="price-table__title">Стандарт</b>
+                <h3 class="price-table__title">Стандарт</h3>
                 <span class="price-table__cost">3,99 USD</span>
               </th>
-            -->
             </tr>
           </thead>
           <tbody class="price-table__body">
             <tr class="price-table__row">
-              <td class="price-table__col">Розовый фильтр</td>
-              <!--
-              <td class="price-table__col">Розовый фильтр</td>
-              <td class="price-table__col">Розовый фильтр</td>
-              -->
+              <td class="price-table__col price-table__col--yes">Розовый фильтр</td>
+              <td class="price-table__col price-table__col--yes">Розовый фильтр</td>
+              <td class="price-table__col price-table__col--yes">Розовый фильтр</td>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__col">Смайлики</td>
-              <!--
-              <td class="price-table__col">Смайлики</td>
-              <td class="price-table__col">Смайлики</td>
-              -->
+              <td class="price-table__col price-table__col--no">Смайлики</td>
+              <td class="price-table__col price-table__col--yes">Смайлики</td>
+              <td class="price-table__col price-table__col--yes">Смайлики</td>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__col">Комментарии</td>
-              <!--
-              <td class="price-table__col">Комментарии</td>
-              <td class="price-table__col">Комментарии</td>
-              -->
+              <td class="price-table__col price-table__col--no">Комментарии</td>
+              <td class="price-table__col price-table__col--no">Комментарии</td>
+              <td class="price-table__col price-table__col--yes">Комментарии</td>
             </tr>
           </tbody>
         </table>
-        <p class="reviews__toggles slider__toggles">
-          <button class="sliders__toggle" type="button">1</button>
+        <p class="price__toggles slider__toggles">
+          <button class="sliders__toggle sliders__toggle--active" type="button">1</button>
           <button class="sliders__toggle" type="button">2</button>
           <button class="sliders__toggle" type="button">3</button>
         </p>

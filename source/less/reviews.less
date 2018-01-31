@@ -37,6 +37,32 @@
   color: #283645;
 }
 
+.reviews__toggles {
+  padding: 40px 0 30px;
+  text-align: center;
+}
+
+.sliders__toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+
+  background: #bec2c7;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+
+  font-size: 0px;
+
+    &--active,
+    &:active {
+      background: #ffffff;
+      box-shadow: 0 0 0 3px #283645;
+    }
+}
+
 .reviews::after {
   content: "";
   position: absolute;
