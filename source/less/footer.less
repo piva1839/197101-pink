@@ -1,7 +1,6 @@
 .footer__wrapper {
   min-width: 280px;
-  margin: 40px auto;
-  padding: 0 20px;
+  padding: 50px 20px 40px 20px;
 
   text-align: center;
 }
@@ -10,10 +9,60 @@
   margin: 40px 0;
 }
 
+.footer__social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  font-size: 0px;
+
+    &--tw {
+      background: url("../img/icon-twitter.svg") no-repeat;
+      background-position: center;
+      background-size: 40%;
+    }
+
+    &--fb {
+      background: url("../img/icon-facebook.svg") no-repeat;
+      background-position: center;
+      background-size: 22%;
+    }
+
+    &--yb {
+      background: url("../img/icon-youtube.svg") no-repeat;
+      background-position: center;
+      background-size: 40%;
+    }
+}
+
 .site-created {
+  position: relative;
+
+  display: inline-block;
+  padding: 10px 40px 10px 0;
+
   font-family: "opensans", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
   text-decoration: none;
+
+   &::after {
+     content: "";
+     position: absolute;
+     top: -2px;
+     right: 0;
+
+     display: block;
+     width: 38px;
+     height: 45px;
+
+     background: url("../img/htmlacademy-red.svg") no-repeat;
+     background-position: center;
+     background-size: 100%;
+   }
 }

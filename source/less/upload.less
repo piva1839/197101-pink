@@ -15,6 +15,7 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
 }
 
 .upload__editor {
@@ -33,15 +34,77 @@
 }
 
 .upload__editor-tools {
-  margin-bottom: 30px;
-
   text-align: center;
 }
 
+.upload__editor-item {
+  display: inline-block;
+  width: 48px;
+  height: 44px;
+  margin: 0 12px;
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+    &--resize {
+      background: url("../img/icon-editor-crop.svg") no-repeat;
+      background-position: center 1px;
+      background-size: 100%;
+    }
+
+    &--color {
+      background: url("../img/icon-editor-fill.svg") no-repeat;
+      background-position: center 2px;
+      background-size: 100%;
+    }
+
+    &--brightness {
+      background: url("../img/icon-editor-contrast.svg") no-repeat;
+      background-position: center;
+      background-size: 70%;
+    }
+}
+
+.upload__editor-range {
+  position: relative;
+
+  padding: 40px 20px;
+}
+
+.range {
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+
+  background: #283645;
+
+  cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 21%;
+
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-top: -8px;
+
+      background: #f2f2f2;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+
+      cursor: pointer;
+    }
+}
+
 .upload__verification {
-  padding-bottom: 40px;
+  padding: 40px 20px;
 
   background: #f2f2f2;
+  border-top: 1px solid #dddfe0;
 }
 
 .button {

@@ -9,7 +9,7 @@
 
   font-family: "opensanslight", sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   color: #283645;
   text-align: center;
 }
@@ -25,4 +25,23 @@
   background: url("../img/bg-triangle-white.svg") no-repeat;
   background-size: 100%;
   background-position: -3px 0;
+}
+
+@media screen and (min-width: 540px) {
+  .slogan__wrapper {
+    padding: 50px 0;
+  }
+
+  .slogan__content {
+    padding: 5px;
+
+    font-family: "opensanslight", sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+
+      &--width {
+        width: 380px;
+        margin: 0 auto;
+      }
+    }
 }

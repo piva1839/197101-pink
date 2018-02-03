@@ -34,7 +34,45 @@
 }
 
 .features__image {
+  height: 276px;
+
   text-align: center;
-  height: 280px;
+
   overflow: hidden;
+}
+
+@media screen and (min-width: 540px) {
+  .features__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features__list {
+    order: 1;
+    width: 60%;
+  }
+
+  .features__item-title {
+    text-align: left;
+  }
+
+  .features__item-desc {
+    text-align: left;
+  }
+
+  .features__image {
+    width: 40%;
+    height: 480px;
+
+    margin-top: -70px;
+    margin-right: 50px;
+
+    overflow: visible;
+  }
+
+  .features__image img {
+    width: 265px;
+    height: 570px;
+  }
 }
