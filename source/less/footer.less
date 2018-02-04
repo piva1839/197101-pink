@@ -1,15 +1,15 @@
-.footer__wrapper {
+.page-footer__wrapper {
   min-width: 280px;
   padding: 50px 20px 40px 20px;
 
   text-align: center;
 }
 
-.footer__social {
+.page-footer__social {
   margin: 40px 0;
 }
 
-.footer__social-icon {
+.page-footer__social-icon {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -65,4 +65,17 @@
      background-position: center;
      background-size: 100%;
    }
+}
+
+@media screen and (min-width: 660px) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 37px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
 }

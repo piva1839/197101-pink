@@ -21,6 +21,10 @@
   border: 2px solid #e5e5e5;
 }
 
+.price-table img {
+  vertical-align: bottom;
+}
+
 .price-table__header {
   background: #283645;
 
@@ -33,7 +37,7 @@
 
 .price-table__col {
   width: 280px;
-  padding: 20px 70px 20px 20px;
+  padding: 20px;
 
   border: 2px solid #e5e5e5;
 
@@ -41,41 +45,11 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: left;
   text-transform: uppercase;
 
-    &--yes,
-    &--no {
-      position: relative;
-    }
-
-    &--yes::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 20px;
-
-      display: block;
-      width: 31px;
-      height: 26px;
-
-      background: url("../img/icon-yes.svg") no-repeat;
-      background-position: center;
-      background-size: 100%;
-    }
-
-    &--no::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 20px;
-
-      display: block;
-      width: 31px;
-      height: 26px;
-
-      background: url("../img/icon-no.svg") no-repeat;
-      background-position: center;
-      background-size: 100%;
+    &:first-child {
+      display: none;
     }
 }
 
@@ -96,6 +70,8 @@
       background: url("../img/bg-hit.svg") no-repeat;
       background-position: center;
       background-size: 100%;
+
+      text-align: center;
     }
 
     &::after {
@@ -112,6 +88,7 @@
       font-size: 14px;
       line-height: 30px;
       color: #ffffff;
+      text-align: center;
       text-transform: uppercase;
 
       transform: rotate(-45deg);
@@ -123,18 +100,65 @@
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .price-table__cost {
+  display: block;
+
   font-family: "opensanslight", sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #a4a7ac;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.price-table__option {
+  float: right;
 }
 
 .price__toggles {
   padding: 40px 0 30px;
   text-align: center;
+}
+
+@media screen and (min-width: 660px) {
+  .price-table {
+    width: 100%;
+  }
+
+  .price-table__header {
+    border-top: 3px solid #f2f2f2;
+  }
+
+  .price-table__col--empty {
+    border-left: 3px solid #f2f2f2;
+  }
+
+  .price-table__col {
+    width: auto;
+    padding: 10px;
+
+    font-size: 0;
+    text-align: center;
+
+      &--empty {
+        background: #f2f2f2;
+      }
+
+      &--font {
+        font-size: 14px;
+        text-align: left;
+      }
+
+      &:first-child {
+        display: table-cell;
+      }
+    }
+
+    .price-table__option {
+      float: none;
+    }
 }

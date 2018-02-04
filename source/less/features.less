@@ -41,16 +41,17 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 660px) {
   .features__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 490px;
   }
 
   .features__list {
     order: 1;
-    width: 60%;
+    width: 54%;
   }
 
   .features__item-title {
@@ -58,21 +59,30 @@
   }
 
   .features__item-desc {
+    margin-bottom: 40px;
+
+    font-family: "opensans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
     text-align: left;
   }
 
   .features__image {
-    width: 40%;
+    position: relative;
+    z-index: 10;
+
+    flex-shrink: 0;
+
+    width: 300px;
     height: 480px;
+    margin-bottom: 60px;
 
-    margin-top: -70px;
-    margin-right: 50px;
-
-    overflow: visible;
+    text-align: left;
   }
 
   .features__image img {
-    width: 265px;
-    height: 570px;
+    width: 270px;
+    height: 550px;
   }
 }

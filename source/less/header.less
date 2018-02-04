@@ -12,6 +12,10 @@
   vertical-align: bottom;
 }
 
+.menu-bar__logo-image--tablet {
+  display: none;
+}
+
 .menu-bar__toggle {
   display: inline-block;
   width: 50px;
@@ -156,7 +160,15 @@
   text-align: center;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 660px) {
+  .menu-bar__logo-image {
+    display: none;
+  }
+
+  .menu-bar__logo-image--tablet {
+    display: block;
+  }
+
   .promo-block__wrapper {
     position: relative;
   }
