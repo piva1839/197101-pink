@@ -1,7 +1,6 @@
 .upload__wrapper {
   min-width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
 
   background: #f2f2f2;
 }
@@ -23,6 +22,10 @@
   background: #f2f2f2;
 }
 
+.upload__image {
+  padding: 0 20px;
+}
+
 .upload__image img {
   vertical-align: bottom;
 
@@ -35,15 +38,16 @@
 
 .upload__editor-tools {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 
   text-align: center;
 }
 
 .upload__editor-tool {
   display: flex;
-  padding-right: 20px;
+
 }
 
 .upload__editor-item {
@@ -76,9 +80,18 @@
 }
 
 .upload__editor-range {
+  flex-basis: 300px;
+  flex-grow: 1;
+  order: 1;
   position: relative;
 
-  padding: 40px 20px;
+  padding: 40px 40px;
+
+  border-bottom: 1px solid #dddfe0;
+}
+
+.range-tablet__wrapper {
+  display: none;
 }
 
 .range {
@@ -106,24 +119,25 @@
       border-radius: 50%;
 
       cursor: pointer;
+
+    }
+
+    &--color-position::after {
+      right: 81%;
     }
 }
 
 .upload__verification {
+  order: 2;
   padding: 40px 20px;
 
   background: #f2f2f2;
-  border-top: 1px solid #dddfe0;
-
-    &--margin {
-      margin: 0 -20px;
-    }
 }
 
 .button {
   display: inline-block;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
 
   outline: none;
 
@@ -132,7 +146,7 @@
 
     background: transparent;
     border: 3px solid #d22856;
-    border-radius: 20px;
+    border-radius: 25px;
 
     font-family: "opensansbold", sans-serif;
     font-size: 18px;
@@ -144,7 +158,7 @@
   &--cancel {
     background: transparent;
     border: 3px solid #dddfe0;
-    border-radius: 20px;
+    border-radius: 25px;
 
     font-family: "opensansbold", sans-serif;
     font-size: 18px;
@@ -167,13 +181,12 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding: 40px 0;
+    padding: 40px 20px 40px 0;
   }
 
   .upload__editor-item {
     margin: 0;
   }
-
 
   .upload__image {
     width: 50%;
@@ -193,7 +206,7 @@
 
   .upload__editor-tool {
     align-items: center;
-    padding: 25px 0 20px;
+    padding: 25px 20px 20px 0;
 
     border-bottom: 1px solid #dddfe0;
   }
@@ -204,6 +217,8 @@
 
   .range-tablet__wrapper {
     position: relative;
+
+    display: block;
     width: 100%;
     margin-left: 25px;
   }
@@ -217,14 +232,6 @@
 
     background: #000000;
   }
-
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
 
     .upload__verification--margin {
       margin: 0;
