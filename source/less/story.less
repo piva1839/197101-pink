@@ -1,3 +1,9 @@
+.story__wrapper {
+  min-width: 280px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .story__invitation {
   margin-top: 50px;
   padding: 0 20px;
@@ -362,8 +368,8 @@ sup {
       }
   }
 
-  .form-field {
-    padding-right: 60px;
+  .contact-block .form-field {
+    padding-right: 80px;
 
       &--phone-icon {
         background: url(../img/phone.png) no-repeat;
@@ -394,4 +400,108 @@ sup {
     width: auto;
     padding: 15px 60px;
   }
+}
+
+@media screen and (min-width: 960px) {
+  .story__wrapper {
+    min-width: 280px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-field {
+    flex-basis: 50%;
+  }
+
+  .name-block {
+    width: 50%;
+  }
+
+  .device-block {
+    width: 50%;
+    padding-left: 32px;
+  }
+
+  .contact-block {
+    flex-grow: 1;
+  }
+
+  .progress-block {
+    flex-grow: 1;
+  }
+
+  .text-block {
+    flex-grow: 1;
+  }
+
+  .form-block {
+    margin: 0;
+    padding: 0;
+  }
+
+  .name-block {
+    padding-top: 60px;
+    padding-right: 32px;
+
+      &--label-stream {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-bottom: 55px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+      }
+  }
+
+  .name-block .form-field {
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .contact-block-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 60px;
+  }
+
+  .contact-block-side {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 365px;
+  }
+
+  .contact-block--label-stream {
+    order: 1;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+
+  .device-block .form-block {
+    padding: 20px 75px 55px;
+  }
+
+  .progress-block-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 60px;
+  }
+
+  .progress-block-inner .checkbox-label {
+    flex-basis: 265px;
+    margin-left: auto;
+  }
+
 }

@@ -56,16 +56,21 @@
         <p class="story__invitation">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="story__invitation--subtext"><br>Пожалуйста, заполните форму ниже:</span>
         </p>
-      </div>
       <form class="form" name="form" id="form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="form-block__wrapper">
+        <div class="form-block__wrapper name-block">
           <div class="form-block form-block--no-border">
+            <div class="name-block--label-stream">
     				  <label class="input-label" for="sername">Фамилия:</label>
     				  <input class="form-field" type="text" name="sername" id="sername" value="" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="name-block--label-stream">
     				  <label class="input-label" for="name">Имя:</label>
     				  <input class="form-field" type="text" name="name" id="name" value="" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="name-block--label-stream">
               <label class="input-label" for="middle-name">Отчество:</label>
     				  <input class="form-field" type="text" name="middle-name" id="middle-name" value="" placeholder="Ну и отчество тоже">
+            </div>
           </div>
         </div>
         <div class="form-block__wrapper form-block__wrapper--gray progress-block">
@@ -73,26 +78,34 @@
             <legend class="form-block__title">
               Ваши безбашенные достижения в путешествии
             </legend>
+            <div class="progress-block-inner">
               <input class="form-field" type="checkbox" name="selfie" id="selfie" value="selfie" checked><label class="checkbox-label" for="selfie"> Сделал селфи с акулой</label>
               <input class="form-field" type="checkbox" name="sun" id="sun" value="sun" checked><label class="checkbox-label" for="sun"> Обгорел на пляже</label>
               <input class="form-field" type="checkbox" name="star" id="star" value="star"><label class="checkbox-label" for="star"> Видел Чака Норриса</label>
               <input class="form-field" type="checkbox" name="souvenir" id="souvenir" value="souvenir"><label class="checkbox-label" for="souvenir"> Накупил сувениров</label>
               <input class="form-field" type="checkbox" name="tower" id="tower" value="tower" checked><label class="checkbox-label" for="tower"> Удержал башню</label>
               <input class="form-field" type="checkbox" name="hotel" id="hotel" value="hotel"><label class="checkbox-label" for="hotel"> Разгромил отель</label>
+            </div>
           </fieldset>
         </div>
         <div class="form-block__wrapper contact-block contact-block--white ">
           <div class="">
             <fieldset class="form-block">
-              <legend class="form-block__title form-block__title--white">
-                Контактная информация
-              </legend>
-        				<label class="input-label" for="tel">Номер телефона</label>
-        				<input class="form-field form-field--phone-icon" type="tel" name="tel" id="tel" value="" placeholder="Номер, пожалуйста">
-        				<label class="input-label" for="email">Адрес почты</label>
-        				<input class="form-field form-field--mail-icon" type="email" name="email" id="email" value="" placeholder="Введите почту*" required>
-            </fieldset>
-          </div>
+                <legend class="form-block__title form-block__title--white">
+                  Контактная информация
+                </legend>
+                  <div class="contact-block-inner">
+                    <div class="contact-block-side">
+          				    <label class="input-label contact-block--label-stream" for="tel">Номер телефона</label>
+          			      <input class="form-field  form-field--phone-icon" type="tel" name="tel" id="tel" value="" placeholder="Номер, пожалуйста">
+                    </div>
+                    <div class="contact-block-side">
+          				    <label class="input-label contact-block--label-stream" for="email">Адрес почты</label>
+          				    <input class="form-field form-field--mail-icon" type="email" name="email" id="email" value="" placeholder="Введите почту*" required>
+                    </div>
+                  </div>
+              </fieldset>
+            </div>
         </div>
         <div class="form-block__wrapper form-block__wrapper--gray device-block device-block--white">
           <fieldset class="form-block form-block--gray device-block--white">
@@ -120,6 +133,7 @@
           </div>
         </div>
       </form>
+    </div>
     </section>
 
     <footer class="page-footer">
