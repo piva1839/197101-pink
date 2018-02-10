@@ -13,6 +13,32 @@
   text-align: center;
 }
 
+.quotes-icon {
+  order: -1;
+  position: relative;
+
+  display: none;
+  min-height: 65px;
+  margin-bottom: 50px;
+
+    &::before {
+      content: "\201C"; /* Непечатаемый символ слева */
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      display: block;
+      width: 80px;
+      height: 65px;
+      margin-left: -50px;
+      margin-top: -65px;
+
+      font-size: 290px;
+
+      color: #efefef;
+    }
+}
+
 .reviews__content,
 .reviews__author {
   margin: 0;
@@ -112,4 +138,20 @@
     line-height: 30px;
     color: #283645;
   }
+}
+
+@media screen and (min-width: 690px) {
+  .effect-info {
+    background: #f2f2f2;
+  }
+
+  .quotes-icon {
+    display: block;
+    padding-top: 70px;
+  }
+
+  .reviews__wrapper {
+    padding-top: 70px;
+  }
+
 }
