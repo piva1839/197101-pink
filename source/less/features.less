@@ -4,6 +4,7 @@
 
 .features__wrapper {
   min-width: 280px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 70px 20px 0;
 }
@@ -16,7 +17,7 @@
   display: block;
   margin-bottom: 20px;
 
-  font-family: "opensansbold", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -26,7 +27,7 @@
 .features__item-desc {
   margin-bottom: 40px;
 
-  font-family: "opensans", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -34,5 +35,55 @@
 }
 
 .features__image {
+  height: 276px;
+
   text-align: center;
+
+  overflow: hidden;
+}
+
+@media screen and (min-width: 660px) {
+  .features__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 490px;
+  }
+
+  .features__list {
+    order: 1;
+    width: 54%;
+  }
+
+  .features__item-title {
+    text-align: left;
+  }
+
+  .features__item-desc {
+    margin-bottom: 40px;
+
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    text-align: left;
+  }
+
+  .features__image {
+    position: relative;
+    z-index: 10;
+
+    flex-shrink: 0;
+
+    width: 300px;
+    height: 480px;
+    margin-bottom: 60px;
+
+    text-align: left;
+  }
+
+  .features__image img {
+    width: 270px;
+    height: 550px;
+  }
 }

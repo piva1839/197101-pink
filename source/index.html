@@ -14,17 +14,23 @@
   <body>
 
     <header class="page-header">
-      <div class="menu-bar">
-        <div class="menu-bar__logo">
-          <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="img/logo-pink-white-mobile.svg" alt="Logo" width="76" height="23"></a>
+      <div class="menu-bar__wrapper">
+        <div class="menu-bar">
+          <div class="menu-bar__logo">
+            <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="img/logo-pink-white-mobile.svg" alt="Logo" width="76" height="23"></a>
+            <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image--tablet" src="img/logo-pink-blue-mobile.svg" alt="Logo" width="150" height="45"></a>
+          </div>
+          <button class="menu-bar__toggle" type="button">
+            Открыть меню
+          </button>
         </div>
-        <button class="menu-bar__toggle" type="button">
-          Открыть меню
-        </button>
       </div>
       <div class="main-nav__wrapper">
         <nav class="main-nav">
           <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__logo">
+              <a class="menu-list__link" href="#"><img src="img/logotype-desktop.png" alt="logo" width="147" height="40"></a>
+            </li>
             <li class="menu-list__item menu-list__item--active">
               <a class="menu-list__link" href="#">Главная</a>
             </li>
@@ -35,43 +41,41 @@
               <a class="menu-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="https://htmlacademy.ru/profile/piva1839">Html academy</a>
+              <a class="menu-list__link" href="https://htmlacademy.ru/profile/piva1839">HTML Academy</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="main-promo__wrapper">
-        <h1 class="visually-hidden">
-          Взгляните на мир иначе!
-        </h1>
-        <div class="main-promo__image">
-          <img src="img/iphone-hand-mobile@1x.png" alt="Promo" width="258" height="286">
+      <div class="promo-block__wrapper">
+        <div class="promo-block">
+        </div>
+        <div class="download">
+          <div class="download__wrapper">
+            <h1 class="promo-block__title promo-block__title--white promo-block__title--show">
+              Взгляните<br>на жизнь иначе!
+            </h1>
+            <a class="button button--download" href="https://www.apple.com/">
+              Скачать приложение
+            </a>
+            <div class="download__links">
+              <a class="download__link download__link--apple" href="https://www.apple.com/">Apple</a>
+              <a class="download__link download__link--android" href="https://play.google.com/">Android</a>
+              <a class="download__link download__link--windows" href="https://www.microsoft.com/">Windows</a>
+            </div>
+            <p class="download__description">
+              Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </div>
     </header>
-
-    <section class="download">
-      <div class="download__wrapper">
-        <a class="button button--download" href="https://www.apple.com/">
-          Скачать приложение
-        </a>
-        <div class="download__links">
-          <a class="download__link" href="https://www.apple.com/">Apple</a>
-          <a class="download__link" href="https://play.google.com/">Android</a>
-          <a class="download__link" href="https://www.microsoft.com/">Windows</a>
-        </div>
-        <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </div>
-    </section>
 
     <section class="slogan">
       <div class="slogan__wrapper">
         <p class="slogan__content">
           Устали от серости мегаполиса?
         </p>
-        <p class="slogan__content">
+        <p class="slogan__content slogan__content--width">
           Нам есть, что вам предложить!
         </p>
       </div>
@@ -111,16 +115,43 @@
       </div>
     </section>
 
+    <section class="effect-info">
+      <div class="effect-info__wrapper">
+        <div class="effect-info__logo">
+          <img src="img/24.png" alt="24" width="240" height="275">
+        </div>
+        <div class="effect-info__description">
+          <h3 class="effect-info__title">
+            Эффект на 24 часа!
+          </h3>
+          <p class="effect-info__text">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится
+            целые сутки!
+          </p>
+          <a class="effect-info__link">
+            Узнать больше об исследовании
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
             <blockquote class="reviews__content">
-              <cite class="reviews__title">
+              <div class="quotes-icon">
+              </div>
+              <cite class="reviews__author">
                 Николай Петров
+                <span class="reviews__author-about">
+                  25 лет, водитель трамвая
+                </span>
               </cite>
               <p class="reviews__desc">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
           </li>
@@ -152,60 +183,81 @@
         <button class="reviews__next" type="button">Следующий отзыв</button>
         -->
         <p class="reviews__toggles slider__toggles">
-          <button class="sliders__toggle" type="button">1</button>
+          <button class="sliders__toggle sliders__toggle--active" type="button">1</button>
           <button class="sliders__toggle" type="button">2</button>
           <button class="sliders__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
-    <section class="price"> <!-- как сделать слайдер-таблицу? -->
+    <section class="price">
       <div class="price__wrapper">
         <table class="price-table">
           <thead class="price-table__header">
             <tr class="price-table__row">
+              <th class="price-table__col price-table__col--empty">
+              </th>
               <th class="price-table__col">
+                <h3 class="price-table__title">База</h3>
+                <span class="price-table__cost">1,99 USD</span>
+              </th>
+              <th class="price-table__col standart-price">
                 <h3 class="price-table__title">Стандарт</h3>
                 <span class="price-table__cost">3,99 USD</span>
               </th>
-              <!--
               <th class="price-table__col">
-                <b class="price-table__title">Стандарт</b>
-                <span class="price-table__cost">3,99 USD</span>
+                <h3 class="price-table__title">Анлим</h3>
+                <span class="price-table__cost">9,99 USD</span>
               </th>
-              <th class="price-table__col">
-                <b class="price-table__title">Стандарт</b>
-                <span class="price-table__cost">3,99 USD</span>
-              </th>
-            -->
             </tr>
           </thead>
           <tbody class="price-table__body">
             <tr class="price-table__row">
-              <td class="price-table__col">Розовый фильтр</td>
-              <!--
-              <td class="price-table__col">Розовый фильтр</td>
-              <td class="price-table__col">Розовый фильтр</td>
-              -->
+              <td class="price-table__col price-table__col--font">
+                Розовый фильтр
+              </td>
+              <td class="price-table__col clearfix">
+                Розовый фильтр <img class="price-table__option" src="img/icon-yes.svg" width="32" height="23">
+              </td>
+              <td class="price-table__col clearfix">
+                Розовый фильтр <img class="price-table__option" src="img/icon-yes.svg" width="32" height="23">
+              </td>
+              <td class="price-table__col clearfix">
+                Розовый фильтр<img class="price-table__option" src="img/icon-yes.svg" width="32" height="23">
+              </td>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__col">Смайлики</td>
-              <!--
-              <td class="price-table__col">Смайлики</td>
-              <td class="price-table__col">Смайлики</td>
-              -->
+              <td class="price-table__col price-table__col--font">
+                Смайлики
+              </td>
+              <td class="price-table__col clearfix">
+                Смайлики <img class="price-table__option" src="img/icon-no.svg" width="32" height="23">
+              </td>
+              <td class="price-table__col clearfix">
+                Смайлики <img class="price-table__option" src="img/icon-yes.svg" width="32" height="23">
+              </td>
+              <td class="price-table__col clearfix">
+                Смайлики <img class="price-table__option" src="img/icon-yes.svg" width="32" height="23">
+              </td>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__col">Комментарии</td>
-              <!--
-              <td class="price-table__col">Комментарии</td>
-              <td class="price-table__col">Комментарии</td>
-              -->
+              <td class="price-table__col price-table__col--font">
+                Комментарии
+              </td>
+              <td class="price-table__col clearfix">
+                Комментарии <img class="price-table__option" src="img/icon-no.svg" width="32" height="23">
+              </td>
+              <td class="price-table__col clearfix">
+                Комментарии <img class="price-table__option" src="img/icon-no.svg" width="32" height="23">
+              </td>
+              <td class="price-table__col clearfix">
+                Комментарии <img class="price-table__option" src="img/icon-yes.svg" width="32" height="23">
+              </td>
             </tr>
           </tbody>
         </table>
-        <p class="reviews__toggles slider__toggles">
-          <button class="sliders__toggle" type="button">1</button>
+        <p class="price__toggles slider__toggles">
+          <button class="sliders__toggle sliders__toggle--active" type="button">1</button>
           <button class="sliders__toggle" type="button">2</button>
           <button class="sliders__toggle" type="button">3</button>
         </p>
@@ -215,7 +267,8 @@
     <section class="main-contact">
       <div class="main-contact__wrapper">
         <b class="main-contact__title">
-          Остались вопросы? Свяжитесь с нами!
+          Остались вопросы?<br>
+          Свяжитесь с нами!
         </b>
         <ul class="main-contact__list contact-list">
           <li class="contact-list__item">
@@ -241,7 +294,23 @@
     </section>
 
     <section class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.284991544267!2d30.32214112664999!3d59.938881102758494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1517172392356" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.284991544267!2d30.32214112664999!3d59.938881102758494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1517172392356" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logotype-blue-tablet.png" alt="Logo" width="147" height="41">
+        </div>
+        <div class="page-footer__social">
+          <a class="page-footer__social-icon page-footer__social-icon--tw">Twitter</a>
+          <a class="page-footer__social-icon page-footer__social-icon--fb">Facebook</a>
+          <a class="page-footer__social-icon page-footer__social-icon--yb">Youtube</a>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="site-created" href="http://piva1839.github.io/">Разработано</a>
+        </div>
+      </div>
+    </footer>
 
 </html>
