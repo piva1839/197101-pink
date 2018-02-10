@@ -5,6 +5,10 @@
   background-size: cover;
 }
 
+.main-nav__wrapper {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .menu-bar {
   display: flex;
   justify-content: space-between;
@@ -26,10 +30,9 @@
 .menu-bar__toggle {
   display: inline-block;
   width: 50px;
-  height: 24px;
+  height: 25px;
 
-  background: url("../img/icon-menu-burger.svg") no-repeat;
-  background-size: 100%;
+  background: url("../img/icon-menu-cross.svg") no-repeat;
   background-position: center;
   border: none;
   outline: none;
@@ -38,7 +41,13 @@
 }
 
 .menu-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+
+    &__logo {
+      display: none;
+    }
 }
 
 .menu-list__item {
@@ -226,16 +235,77 @@
   }
 
   .download__wrapper {
+    padding: 0 20px 20px;
+
     background: transparent;
   }
 
   .download {
     position: absolute;
     left: 0;
-    bottom: 15%;
+    bottom: 14%;
 
     width: 50%;
 
     background: transparent;
   }
+}
+
+@media screen and (min-width: 960px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .main-nav {
+    min-width: 280px;
+    max-width: 960px;
+    margin: 0 auto;
+
+    padding: 0 20px;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    align-items: baseline;
+    min-height: 100px;
+  }
+
+  .menu-list__logo {
+    display: block;
+  }
+
+  .menu-list__logo img {
+    margin-bottom: -4px;
+  }
+
+  .menu-list__item {
+    flex: 1;
+    margin-top: 25px;
+
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .menu-list__link {
+    padding: 0;
+
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: none;
+  }
+
+  .download {
+    width: 40%;
+  }
+
+  .button {
+    &--download {
+      font-size: 21px;
+      margin-top: 10px;
+    }
+  }
+
 }
