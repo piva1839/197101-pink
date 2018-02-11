@@ -110,7 +110,7 @@
       display: block;
       width: 10px;
       height: 10px;
-      margin-top: -8px;
+      margin-top: -7px;
 
       background: #f2f2f2;
       border: 2px solid #d22856;
@@ -121,6 +121,10 @@
 
     &--color-position::after {
       right: 81%;
+    }
+
+    &:active::after {
+      background: #d22856;
     }
 }
 
@@ -139,6 +143,8 @@
 
   outline: none;
 
+  cursor: pointer;
+
   &--confirm {
     margin-bottom: 10px;
 
@@ -151,6 +157,16 @@
     line-height: 18px;
     color: #d22856;
     text-decoration: none;
+
+      &:hover {
+        background: #d22856;
+
+        color: #ffffff;
+      }
+
+      &:active {
+        color: #e08195;
+      }
   }
 
   &--cancel {
@@ -163,11 +179,25 @@
     line-height: 18px;
     color: #dddfe0;
     text-decoration: none;
+
+      &:hover {
+        border: 3px solid #b5b9be;
+
+        color: #c4c6c8;
+      }
+
+      &:active {
+        background: #b5b9be;
+
+        color: #cdd0d3;
+      }
   }
 }
 
 @media screen and (min-width: 660px) {
   .upload__invitation {
+    margin-top: 20px;
+
     font-family: "opensans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -255,7 +285,11 @@
     }
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 960px) {
+  .upload__invitation {
+    margin-top: 0;
+  }
+
   .upload__wrapper {
     background: #ffffff;
   }

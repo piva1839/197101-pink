@@ -125,6 +125,36 @@
   text-align: center;
 }
 
+.sliders__toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+
+  background: #bec2c7;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+
+  font-size: 0px;
+
+  cursor: pointer;
+
+    &:hover {
+      background: #7e868f;
+    }
+
+    &:active {
+      background: #e9ebec;
+    }
+
+    &--active {
+      background: #ffffff;
+      box-shadow: 0 0 0 3px #283645;
+    }
+}
+
 @media screen and (min-width: 660px) {
   .price-table {
     width: 100%;

@@ -1,10 +1,19 @@
 .page-footer__wrapper {
+  display: none;
   min-width: 280px;
   max-width: 960px;
   margin: 0 auto;
   padding: 50px 20px 40px 20px;
 
   text-align: center;
+}
+
+.page-footer__logo {
+  cursor: pointer;
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .page-footer__social {
@@ -21,6 +30,8 @@
   border-radius: 50%;
 
   font-size: 0px;
+
+  cursor: pointer;
 
     &--tw {
       background: url("../img/icon-twitter.svg") no-repeat;
@@ -39,6 +50,15 @@
       background-position: center;
       background-size: 40%;
     }
+
+    &:hover {
+      border: 3px solid #404c59;
+    }
+
+    &:active {
+      border: 3px solid #d3d4d5;
+      opacity: 0.3;
+    }
 }
 
 .site-created {
@@ -53,20 +73,24 @@
   color: #283645;
   text-decoration: none;
 
-   &::after {
-     content: "";
-     position: absolute;
-     top: -2px;
-     right: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: 0;
 
-     display: block;
-     width: 38px;
-     height: 45px;
+      display: block;
+      width: 38px;
+      height: 45px;
 
-     background: url("../img/htmlacademy-red.svg") no-repeat;
-     background-position: center;
-     background-size: 100%;
-   }
+      background: url("../img/htmlacademy-red.svg") no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
 }
 
 @media screen and (min-width: 660px) {
@@ -74,10 +98,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px 37px;
+    padding: 40px 20px;
   }
 
   .page-footer__social {
     margin: 0;
   }
+
+}
+
+@media screen and (min-width: 960px) {
+
+  .page-footer__wrapper {
+    padding: 70px 20px;
+
+    text-align: center;
+  }
+
 }

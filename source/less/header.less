@@ -13,23 +13,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* position: fixed; */
+  width: 100%;
+  padding: 20px;
 
-  background: #283645; /* rgba(0, 0, 0, 0.3) */
+  background: #283645;
   border-bottom: 1px solid #000001;
 }
 
 .menu-bar__logo-image {
   vertical-align: bottom;
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .menu-bar__logo-image--tablet {
   display: none;
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .menu-bar__toggle {
   display: inline-block;
-  width: 50px;
+  width: 25px;
   height: 25px;
 
   background: url("../img/icon-menu-cross.svg") no-repeat;
@@ -38,6 +47,12 @@
   outline: none;
 
   font-size: 0px;
+
+  cursor: pointer;
+
+    &:active {
+      opacity: 0.3;
+    }
 }
 
 .menu-list {
@@ -68,6 +83,88 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+    &:hover,
+    &--active {
+      color: #d22856;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+}
+
+@media screen and (min-width: 660px) {
+  .menu-bar__logo-image {
+    display: none;
+  }
+
+  .menu-bar__logo-image--tablet {
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .main-nav {
+    min-width: 280px;
+    max-width: 960px;
+    margin: 0 auto;
+
+    padding: 0 20px;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 100px;
+  }
+
+  .menu-list__logo {
+    display: block;
+    margin-right: 150px;
+  }
+
+  .menu-list__logo img {
+    margin-bottom: -4px;
+  }
+
+  .menu-list__item {
+    margin-top: 25px;
+
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .menu-list__link {
+    padding: 0;
+
+    font-family: "opensans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: none;
+
+      &:active {
+        color: #ffffff;
+        opacity: 0.3;
+      }
+
+      &--active {
+        padding-bottom: 9px;
+
+        border-bottom: 2px solid #ffffff;
+
+        text-align: center;
+      }
+  }
+
 }
 
 .promo-block__wrapper {
@@ -120,6 +217,10 @@
     }
 }
 
+.download {
+  background: #1d2631;
+}
+
 .download__wrapper {
   min-width: 280px;
   margin: 0 auto;
@@ -131,23 +232,33 @@
 .button {
   &--download {
     width: 100%;
-    padding: 15px !important;
+    padding: 15px;
 
     background: transparent;
     border: 3px solid #ffffff;
     border-radius: 25px;
 
-    font-family: "opensans", "Arial", sans-serif;
+    font-family: "opensansbold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 18px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+
+      &:hover {
+        background: #ffffff;
+
+        color: #d22856;
+      }
+
+      &:active {
+        color: #f2ced5;
+      }
   }
 }
 
 .download__links {
-  margin: 30px 0;
+  margin: 30px 0 20px;
 
   text-align: center;
 }
@@ -185,14 +296,6 @@
 }
 
 @media screen and (min-width: 660px) {
-  .menu-bar__logo-image {
-    display: none;
-  }
-
-  .menu-bar__logo-image--tablet {
-    display: block;
-  }
-
   .promo-block__wrapper {
     position: relative;
   }
@@ -249,63 +352,19 @@
 
     background: transparent;
   }
+
 }
 
-@media screen and (min-width: 960px) {
-  .menu-bar {
-    display: none;
-  }
-
-  .main-nav {
-    min-width: 280px;
-    max-width: 960px;
-    margin: 0 auto;
-
-    padding: 0 20px;
-  }
-
-  .menu-list {
-    flex-direction: row;
-    align-items: baseline;
-    min-height: 100px;
-  }
-
-  .menu-list__logo {
-    display: block;
-  }
-
-  .menu-list__logo img {
-    margin-bottom: -4px;
-  }
-
-  .menu-list__item {
-    flex: 1;
-    margin-top: 25px;
-
-    background: none;
-    border: none;
-    box-shadow: none;
-  }
-
-  .menu-list__link {
-    padding: 0;
-
-    font-family: "opensans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 18px;
-    color: #ffffff;
-    text-transform: none;
-  }
-
-  .download {
-    width: 40%;
-  }
-
-  .button {
-    &--download {
-      font-size: 21px;
-      margin-top: 10px;
+  @media screen and (min-width: 960px) {
+    .download {
+      width: 320px;
     }
-  }
 
-}
+    .button {
+      &--download {
+        font-size: 21px;
+        margin-top: 10px;
+      }
+    }
+
+  }

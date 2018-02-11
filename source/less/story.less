@@ -121,6 +121,18 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:hover {
+      border: 2px solid #283645;
+    }
+
+    &:focus {
+      border: 2px solid #d22856;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
 }
 
 .checkbox-label {
@@ -157,6 +169,14 @@
       background: #ffffff;
     }
 
+    &:hover::before {
+      border: 2px solid #283645;
+    }
+
+    &:active::before {
+      border: 2px solid #d22856;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -178,8 +198,25 @@
 	display: none;
 }
 
-input:checked + .checkbox-label::after {
+input:checked + .checkbox-label::before {
+  border: 2px solid #e5e5e5;
+}
+
+input:checked + .checkbox-label::after,
+input:active + .checkbox-label::after {
   display: block;
+}
+
+input:checked:hover + .checkbox-label::before {
+  border: 2px solid #283645;
+}
+
+input:checked:active + .checkbox-label::before {
+  border: 2px solid #d22856;
+}
+
+input:checked:active + .checkbox-label::after {
+  display: none;
 }
 
 .radio-label {
@@ -213,6 +250,14 @@ input:checked + .checkbox-label::after {
       background: #ffffff;
     }
 
+    &:hover::before {
+      border: 2px solid #283645;
+    }
+
+    &:active::before {
+      border: 2px solid #d22856;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -231,8 +276,25 @@ input:checked + .checkbox-label::after {
     }
 }
 
-input:checked + .radio-label::after {
+input:checked + .radio-label::before {
+  border: 2px solid #e5e5e5;
+}
+
+input:checked + .radio-label::after,
+input:active + .radio-label::after {
   display: block;
+}
+
+input:checked:hover + .radio-label::before {
+  border: 2px solid #283645;
+}
+
+input:checked:active + .radio-label::before {
+  border: 2px solid #d22856;
+}
+
+input:checked:active + .radio-label::after {
+  display: none;
 }
 
 .progress-block-inner__part .checkbox-label {
@@ -257,14 +319,24 @@ input:checked + .radio-label::after {
 
 .text-block-inner .form-area {
   border: 2px solid #e5e5e5;
+
+  outline: none;
+
+    &:hover {
+      border: 2px solid #283645;
+    }
+
+    &:focus {
+      border: 2px solid #d22856;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
 }
 
 .text-block .form-block {
   padding-bottom: 20px;
-}
-
-.form-area:focus::placeholder {
-  color: transparent;
 }
 
 .button {
@@ -286,6 +358,14 @@ input:checked + .radio-label::after {
     text-transform: uppercase;
 
     cursor: pointer;
+
+      &:hover {
+        background: #1c9b5e;
+      }
+
+      &:active {
+        color: #7dbd99;
+      }
   }
 }
 
@@ -490,6 +570,7 @@ sup {
 
   .button--form {
     width: auto;
+    padding: 15px 55px;
   }
 
 }
@@ -571,6 +652,7 @@ sup {
     flex-direction: column;
     width: 100%;
     max-width: 360px;
+    margin-bottom: 0;
   }
 
   .contact-block--label-stream {
