@@ -11,7 +11,7 @@
   margin-top: 45px;
   margin-bottom: 40px;
 
-  font-family: "opensanslight", "Arial", sans-serifsans-serif;
+  font-family: "opensanslight", "Arial", sans-serif;
   font-size: 24px;
   line-height: 32px;
   color: #b1b4b8;
@@ -32,7 +32,7 @@
   display: block;
   margin-bottom: 5px;
 
-  font-family: "opensansbold", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #283645;
@@ -42,7 +42,7 @@
 .contact-list__item-mail,
 .contact-list__item-address {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   font-family: "opensanslight", "Arial", sans-serif;
   font-size: 24px;
@@ -76,6 +76,14 @@
 }
 
 @media screen and (min-width: 660px) {
+  .main-contact__title {
+    font-family: "opensanslight", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    color: #283645;
+    text-align: center;
+  }
+
   .contact-list {
     flex-direction: row;
   }
@@ -83,6 +91,10 @@
   .contact-list__item {
     width: 310px;
     padding: 10px;
+  }
+
+  .contact-list__item-title {
+    margin-bottom: 25px;
   }
 
   .map {

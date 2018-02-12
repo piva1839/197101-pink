@@ -2,7 +2,7 @@
   min-width: 280px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .slider__list {
@@ -22,7 +22,7 @@
   margin-bottom: 50px;
 
     &::before {
-      content: "\201C"; /* Непечатаемый символ слева */
+      content: "\201C";
       position: absolute;
       top: 0;
       left: 50%;
@@ -92,8 +92,17 @@
 
   font-size: 0px;
 
-    &--active,
+  cursor: pointer;
+
+    &:hover {
+      background: #7e868f;
+    }
+
     &:active {
+      background: #e9ebec;
+    }
+
+    &--active {
       background: #ffffff;
       box-shadow: 0 0 0 3px #283645;
     }
@@ -140,7 +149,7 @@
   }
 }
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 960px) {
   .effect-info {
     background: #f2f2f2;
   }

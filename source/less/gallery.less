@@ -50,10 +50,12 @@
   width: 100%;
   height: auto;
   min-height: 100%;
+
+  cursor: pointer;
 }
 
 .panorama__post {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   background: #f2f2f2;
 }
@@ -64,6 +66,8 @@
   width: 100%;
   min-height: 100%;
   height: auto;
+
+  cursor: pointer;
 }
 
 .gallery__photo-info {
@@ -194,6 +198,7 @@
     margin-right: auto;
     order: -1;
   }
+
 }
 
 @media screen and (min-width: 960px) {
@@ -201,7 +206,17 @@
     height: 510px;
   }
 
+  .panorama__post {
+    margin-bottom: 50px;
+  }
+
   .gallery__post {
     width: 32%;
+    margin-bottom: 50px;
   }
+
+  .gallery__photo-info {
+    margin-bottom: 0;
+  }
+
 }
