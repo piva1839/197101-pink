@@ -121,6 +121,10 @@
   background-position: -3px 0;
 }
 
+.sliders-arrow {
+  display: none;
+}
+
 @media screen and (min-width: 660px) {
   .reviews__content {
     display: flex;
@@ -160,7 +164,62 @@
   }
 
   .reviews__wrapper {
+    position: relative;
+
     padding-top: 70px;
+  }
+
+  .reviews__desc {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .sliders-arrow {
+    position: absolute;
+    top: 50%;
+
+    display: block;
+    width: 28px;
+    height: 47px;
+    margin-top: -15px;
+
+    background: #ffffff;
+    border: none;
+
+    outline: none;
+    cursor: pointer;
+
+     &--prev {
+       left: 20px;
+
+       background: url("../img/left-arrow.png") no-repeat;
+
+       opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:active {
+          opacity: 0.3;
+        }
+     }
+
+     &--next {
+       right: 20px;
+
+       background: url("../img/right-arrow.png") no-repeat;
+
+       opacity: 0.5;
+
+         &:hover {
+           opacity: 1;
+         }
+
+         &:active {
+           opacity: 0.3;
+         }
+     }
   }
 
 }
