@@ -14,22 +14,24 @@
   <body>
 
     <header class="page-header">
-      <div class="menu-bar">
-        <div class="menu-bar__logo">
-          <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image" src="img/logo-pink-white-mobile.svg" alt="Logo" width="76" height="23"></a>
-          <a class="menu-bar__logo-link" href="#"><img class="menu-bar__logo-image--tablet" src="img/logo-pink-blue-mobile.svg" alt="Logo" width="150" height="45"></a>
+      <div class="menu-bar__wrapper">
+        <div class="menu-bar">
+          <div class="menu-bar__logo">
+            <a class="menu-bar__logo-link" href="index.html"><img class="menu-bar__logo-image" src="img/logo-pink-white-mobile.svg" alt="Logo" width="76" height="23"></a>
+            <a class="menu-bar__logo-link" href="index.html"><img class="menu-bar__logo-image--tablet" src="img/logo-pink-blue-mobile.svg" alt="Logo" width="150" height="45"></a>
+          </div>
+          <button class="menu-bar__toggle menu-bar__toggle--cross menu-bar__toggle--burger" type="button">
+            Закрыть меню
+          </button>
         </div>
-        <button class="menu-bar__toggle" type="button">
-          Открыть меню
-        </button>
       </div>
       <div class="main-nav__wrapper">
         <nav class="main-nav">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item menu-list__logo">
-              <a class="menu-list__link" href="#"><img src="img/logotype-desktop.png" alt="logo" width="147" height="40"></a>
+              <a class="menu-list__link" href="index.html"><img src="img/logo-pink-white-desktop.svg" alt="logo" width="147" height="40"></a>
             </li>
-            <li class="menu-list__item menu-list__item--active">
+            <li class="menu-list__item">
               <a class="menu-list__link" href="index.html">Главная</a>
             </li>
             <li class="menu-list__item">
@@ -44,14 +46,16 @@
           </ul>
         </nav>
       </div>
-      <div class="promo-block__wrapper">
-        <div class="promo-block promo-block--level-page">
-          <h1 class="promo-block__title">
-            Фотографии<br>пользователей
-          </h1>
-        </div>
-      </div>
     </header>
+
+    <section class="promo promo--internal">
+      <div class="promo__wrapper promo__wrapper--internal">
+        <h1 class="promo__title promo__title--internal">
+          Фотографии<br>
+          пользователей
+        </h1>
+      </div>
+    </section>
 
     <section class="gallery">
       <p class="gallery__invitation">
@@ -59,7 +63,11 @@
         Видите, как не хватает ваших?
       </p>
       <div class="gallery__panorama">
-        <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" width="280" height="180">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+          <img src="img/panorama-mobile@1x.jpg" alt="Panorama" width="320" height="137" srcset="img/panorama-mobile@2x.jpg">
+        </picture>
       </div>
       <div class="gallery__wrapper">
         <div class="panorama__post">
@@ -84,7 +92,11 @@
       <div class="gallery__wrapper">
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="img/photo-car-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Панорама дня" width="280" height="180" srcset="img/photo-car-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -105,7 +117,11 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня" width="280" height="180" srcset="img/photo-drumset-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -126,7 +142,11 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="img/photo-window-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Панорама дня" width="280" height="180" srcset="img/photo-window-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -147,7 +167,11 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня" width="280" height="180" srcset="img/photo-fair-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -168,7 +192,11 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня" width="280" height="180"></a>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня" width="280" height="180" srcset="img/photo-pov-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -189,7 +217,11 @@
         </div>
         <div class="gallery__post">
           <div class="gallery__photo">
-            <img src="img/photo-wing-mobile@1x.jpg" alt="Панорама дня" width="280" height="180">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Панорама дня" width="280" height="180" srcset="img/photo-window-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="gallery__photo-info">
             <b class="gallery__photo-author">
@@ -219,7 +251,11 @@
       <div class="upload__wrapper">
         <div class="upload__editor">
           <div class="upload__image">
-            <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото" width="280" height="374">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
+              <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото" width="280" height="374" srcset="img/photo-road-mobile@2x.jpg">
+            </picture>
           </div>
           <div class="upload__editor-tools">
             <div class="upload__editor-tool">

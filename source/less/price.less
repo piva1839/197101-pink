@@ -7,7 +7,8 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 80px;
+  padding-top: 90px;
+
   overflow: hidden;
 
   text-align: left;
@@ -38,7 +39,7 @@
 
 .price-table__col {
   width: 280px;
-  padding: 20px;
+  padding: 15px 20px;
 
   border: 2px solid #e5e5e5;
 
@@ -121,7 +122,7 @@
 }
 
 .price__toggles {
-  padding: 40px 0 30px;
+  padding: 43px 0 35px;
   text-align: center;
 }
 
@@ -130,7 +131,7 @@
   vertical-align: top;
   width: 6px;
   height: 6px;
-  margin: 0 5px;
+  margin: 0 7px;
 
   background: #bec2c7;
   border: none;
@@ -156,8 +157,13 @@
 }
 
 @media screen and (min-width: 660px) {
+  .price__wrapper {
+    padding-top: 68px;
+  }
+
   .price-table {
     width: 100%;
+    margin-top: 15px;
   }
 
   .price-table__header {
@@ -169,8 +175,8 @@
   }
 
   .price-table__col {
-    width: auto;
-    padding: 10px;
+    width: 145px;
+    padding: 8px 10px;
 
     font-size: 0;
     text-align: center;
@@ -189,15 +195,67 @@
       }
     }
 
+    .price-table__title {
+      font-family: "opensansbold", "Arial", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+
+    .price-table__cost {
+      font-family: "opensanslight", "Arial", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      color: #a4a7ac;
+    }
+
+    .price-table__col--font {
+      font-family: "opensans", "Arial", sans-serif;
+      font-size: 14px;
+      line-height: 30px;
+
+      text-transform: none;
+    }
+
     .price-table__option {
       float: none;
     }
+
+    .price__toggles {
+      padding-bottom: 15px;
+    }
 }
 
-@media screen and (min-width: 660px) {
-
+@media screen and (min-width: 960px) {
   .price__wrapper {
-    padding-top: 130px;
+    padding-top: 115px;
+  }
+
+  .price-table__title {
+    font-family: "opensansbold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+
+  .price-table__cost {
+    font-family: "opensanslight", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #a4a7ac;
+  }
+
+  .price-table__col {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .price-table__col--height {
+    padding: 20px 0;
+  }
+
+  .price__toggles {
+    padding-bottom: 30px;
   }
 
 }

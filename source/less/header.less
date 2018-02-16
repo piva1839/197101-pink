@@ -1,8 +1,6 @@
 .page-header {
-  background: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  margin-bottom: -60px;
+  min-width: 280px;
 }
 
 .main-nav__wrapper {
@@ -14,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px;
+  padding: 21px 20px;
 
   background: #283645;
   border-bottom: 1px solid #000001;
@@ -38,21 +36,36 @@
 
 .menu-bar__toggle {
   display: inline-block;
-  width: 25px;
-  height: 25px;
-
-  background: url("../img/icon-menu-cross.svg") no-repeat;
-  background-position: center;
-  border: none;
-  outline: none;
 
   font-size: 0px;
 
   cursor: pointer;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &--burger {
+    display: none;
+    width: 50px;
+    height: 25px;
+
+    background: url("../img/icon-menu-burger.svg") no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+  }
+
+  &--cross {
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    background: url("../img/icon-menu-cross.svg") no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .menu-list {
@@ -74,7 +87,7 @@
 
 .menu-list__link {
   display: block;
-  padding: 20px;
+  padding: 15px 20px;
 
   font-family: "opensansbold", "Arial", sans-serif;
   font-size: 18px;
@@ -83,6 +96,8 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  cursot: pointer;
 
     &:hover,
     &--active {
@@ -95,6 +110,14 @@
 }
 
 @media screen and (min-width: 660px) {
+  .page-header {
+    margin-bottom: 0;
+  }
+
+  .menu-bar {
+    padding: 25px 20px 35px;
+  }
+
   .menu-bar__logo-image {
     display: none;
   }
@@ -106,6 +129,13 @@
 }
 
 @media screen and (min-width: 960px) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    margin-bottom: -110px;
+    z-index: 10;
+  }
+
   .menu-bar {
     display: none;
   }
@@ -114,7 +144,6 @@
     min-width: 280px;
     max-width: 960px;
     margin: 0 auto;
-
     padding: 0 20px;
   }
 
@@ -122,12 +151,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    min-height: 100px;
+    min-height: 110px;
   }
 
   .menu-list__logo {
     display: block;
-    margin-right: 150px;
+    margin-right: 100px;
   }
 
   .menu-list__logo img {
@@ -150,6 +179,7 @@
     line-height: 18px;
     color: #ffffff;
     text-transform: none;
+    cursor: pointer;
 
       &:active {
         color: #ffffff;
@@ -166,205 +196,3 @@
   }
 
 }
-
-.promo-block__wrapper {
-  min-width: 280px;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.promo-block {
-  display: flex;
-  min-height: 400px;
-
-  background: url("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: auto;
-
-    &--level-page {
-      display: flex;
-      min-height: 235px;
-
-      background: url("../img/bg-back-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-}
-
-.promo-block__title {
-  margin: auto;
-  padding: 20px;
-
-  font-family: "opensanslight", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-
-    &--white {
-      padding-bottom: 30px;
-
-      font-family: "opensanslight", "Arial", sans-serif;
-      font-size: 40px;
-      line-height: 46px;
-      color: #ffffff;
-    }
-
-    &--show {
-      display: none;
-    }
-}
-
-.download {
-  background: #1d2631;
-}
-
-.download__wrapper {
-  min-width: 280px;
-  margin: 0 auto;
-  padding: 30px 20px;
-
-  background: #1d2631;
-}
-
-.button {
-  &--download {
-    width: 100%;
-    padding: 15px;
-
-    background: transparent;
-    border: 3px solid #ffffff;
-    border-radius: 25px;
-
-    font-family: "opensansbold", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 18px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-
-      &:hover {
-        background: #ffffff;
-
-        color: #d22856;
-      }
-
-      &:active {
-        color: #f2ced5;
-      }
-  }
-}
-
-.download__links {
-  margin: 30px 0 20px;
-
-  text-align: center;
-}
-
-.download__link {
-  display: inline-block;
-  width: 50px;
-  height: 60px;
-  margin: 10px;
-
-  font-size: 0px;
-
-    &--apple {
-      background: url("../img/logo-apple.svg") no-repeat;
-      background-position: center;
-    }
-
-    &--android {
-      background: url("../img/logo-android.svg") no-repeat;
-      background-position: center 10px;
-    }
-
-    &--windows {
-      background: url("../img/logo-microsoft.svg") no-repeat;
-      background-position: center 13px;
-    }
-}
-
-.download__description {
-  font-family: "opensanslight", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #c8c9ca;
-  text-align: center;
-}
-
-@media screen and (min-width: 660px) {
-  .promo-block__wrapper {
-    position: relative;
-  }
-
-  .promo-block {
-    min-height: 620px;
-
-    background: url("../img/iphone-hand-mobile@1x2.png");
-    background-repeat: no-repeat;
-    background-position: 94% 100%;
-    background-size: auto;
-
-      &--level-page {
-        display: flex;
-        min-height: 430px;
-
-        background: url("../img/bg-back-mobile@1x.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-  }
-
-  .promo-block__title {
-    margin: auto;
-    padding: 20px;
-
-    font-family: "opensanslight", "Arial", sans-serif;
-    font-size: 50px;
-    line-height: 56px;
-    color: #ffffff;
-    text-align: center;
-  }
-
-  .promo-block__title--show {
-    display: block;
-    margin: 0 auto;
-
-    text-align: center;
-  }
-
-  .download__wrapper {
-    padding: 0 20px 20px;
-
-    background: transparent;
-  }
-
-  .download {
-    position: absolute;
-    left: 0;
-    bottom: 14%;
-
-    width: 50%;
-
-    background: transparent;
-  }
-
-}
-
-  @media screen and (min-width: 960px) {
-    .download {
-      width: 320px;
-    }
-
-    .button {
-      &--download {
-        font-size: 21px;
-        margin-top: 10px;
-      }
-    }
-
-  }
