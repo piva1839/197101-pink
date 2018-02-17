@@ -27,11 +27,9 @@
 }
 
 .menu-bar__logo-image--tablet {
+  width: 147px;
+  height: 40px;
   display: none;
-
-    &:active {
-      opacity: 0.3;
-    }
 }
 
 .menu-bar__toggle {
@@ -120,10 +118,21 @@
 
   .menu-bar__logo-image {
     display: none;
+
+      &--tablet {
+        display: block;
+        width: 147px;
+        height: 40px;
+
+          &:active {
+            opacity: 0.3;
+          }
+      }
   }
 
-  .menu-bar__logo-image--tablet {
-    display: block;
+  .menu-bar__logo-link:hover .menu-bar__logo-image--tablet {
+    fill: #d22856;
+    opacity: 0.3;
   }
 
 }
