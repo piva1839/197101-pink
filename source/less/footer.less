@@ -62,17 +62,12 @@
 }
 
 .site-created {
-  position: relative;
-
-  display: inline-block;
-  padding: 10px 40px 10px 0;
-
   font-family: "opensans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
   text-decoration: none;
-
+/*
     &::after {
       content: "";
       position: absolute;
@@ -91,6 +86,7 @@
     &:active::after {
       opacity: 0.3;
     }
+*/
 }
 
 @media screen and (min-width: 660px) {
@@ -103,6 +99,25 @@
 
   .page-footer__social {
     margin: 0;
+  }
+
+  .site-created {
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+
+  .academy-link {
+    display: inline-block;
+    vertical-align: bottom;
+    fill: #d22856;
+  }
+
+  .academy-link:hover .logo-academy {
+    fill: #283645;
+  }
+
+  .academy-link:active .logo-academy {
+    opacity: 0.3;
   }
 
 }
