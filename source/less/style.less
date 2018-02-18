@@ -23,20 +23,38 @@
 
 @font-face {
 	font-family: "opensans";
-	src: url("../fonts/opensans.woff") format("truetype");
+	src: url("../fonts/opensans.woff") format("woff");
 	src: local("opensans"), url(../fonts/opensans.woff) format("woff"), url("../fonts/opensans.woff") format("truetype");
 }
 
 @font-face {
+	font-family: "opensans";
+	src: url("../fonts/opensans.woff2") format("woff2");
+	src: local("opensans"), url(../fonts/opensans.woff2) format("woff2"), url("../fonts/opensans.woff2") format("truetype");
+}
+
+@font-face {
 	font-family: "opensansbold";
-	src: url("../fonts/opensansbold.woff") format("truetype");
+	src: url("../fonts/opensansbold.woff") format("woff");
 	src: local("opensansbold"), url(../fonts/opensansbold.woff) format("woff"), url("../fonts/opensansbold.woff") format("truetype");
 }
 
 @font-face {
+	font-family: "opensansbold";
+	src: url("../fonts/opensansbold.woff2") format("woff2");
+	src: local("opensansbold"), url(../fonts/opensansbold.woff2) format("woff2"), url("../fonts/opensansbold.woff2") format("truetype");
+}
+
+@font-face {
 	font-family: "opensanslight";
-	src: url("../fonts/opensanslight.woff") format("truetype");
+	src: url("../fonts/opensanslight.woff") format("woff");
 	src: local("opensanslight"), url(../fonts/opensanslight.woff) format("woff"), url("../fonts/opensanslight.woff") format("truetype");
+}
+
+@font-face {
+	font-family: "opensanslight";
+	src: url("../fonts/opensanslight.woff2") format("woff2");
+	src: local("opensanslight"), url(../fonts/opensanslight.woff2) format("woff2"), url("../fonts/opensanslight.woff2") format("truetype");
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, img, button {
@@ -44,16 +62,16 @@ h1, h2, h3, h4, h5, h6, p, ul, li, img, button {
 	padding: 0;
 }
 
-@import "header.less";
-@import "promo.less";
-@import "slogan.less";
-@import "features.less";
-@import "effect.less";
-@import "reviews.less";
-@import "price.less";
-@import "contact.less";
-@import "gallery.less";
-@import "upload.less";
-@import "footer.less";
-@import "story.less";
-@import "map.less";
+@import "blocks/header.less";
+@import "blocks/promo.less";
+@import "blocks/slogan.less";
+@import "blocks/features.less";
+@import "blocks/effect.less";
+@import "blocks/reviews.less";
+@import "blocks/price.less";
+@import "blocks/contact.less";
+@import "blocks/gallery.less";
+@import "blocks/upload.less";
+@import "blocks/footer.less";
+@import "blocks/story.less";
+@import "blocks/map.less";
