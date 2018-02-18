@@ -21,7 +21,7 @@
 
 .form-block__wrapper {
   min-width: 280px;
-  padding: 50px 20px 0 20px;
+  padding: 30px 20px 0 20px;
 
     &--gray {
       background: #f2f2f2;
@@ -79,6 +79,10 @@
     &--white {
       background: #ffffff;
     }
+
+    &--display {
+      display: none;
+    }
 }
 
 .name-block--label-stream,
@@ -88,6 +92,14 @@
     &:last-child {
       margin-bottom: 0;
     }
+}
+
+.contact-block .form-block {
+  padding-bottom: 50px;
+}
+
+.device-block .form-block {
+  padding-bottom: 40px;
 }
 
 .input-label {
@@ -308,7 +320,7 @@ input:checked:active + .radio-label::after {
 .form-area {
   width: 100%;
   min-width: 280px;
-  min-height: 150px;
+  min-height: 200px;
   padding: 20px;
 
   font-family: "opensans", "Arial", sans-serif;
@@ -391,6 +403,8 @@ sup {
   }
 
   .story__invitation {
+    margin-top: 90px;
+    margin-bottom: 40px;
     padding-left: 60px;
     padding-right: 60px;
 
@@ -417,7 +431,7 @@ sup {
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        margin-bottom: 55px;
+        margin-bottom: 50px;
 
           &:last-child {
             margin-bottom: 0;
@@ -479,6 +493,11 @@ sup {
 
   .progress-block-inner__part .checkbox-label {
     margin-bottom: 40px;
+    padding-bottom: 10px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
   }
 
   .contact-block {
@@ -509,6 +528,10 @@ sup {
       &--white {
         background: #ffffff;
       }
+  }
+
+  .device-block .form-block {
+    padding-bottom: 60px;
   }
 
   .text-block {
@@ -566,6 +589,10 @@ sup {
     padding-right: 30px;
 
     background: #ffffff;
+  }
+
+  .form-area {
+    min-height: 180px;
   }
 
   .button--form {
@@ -684,8 +711,13 @@ sup {
     flex-grow: 1;
   }
 
-  .text-block .form-block{
+  .form-area {
+    min-height: 120px;
+  }
+
+  .text-block .form-block {
     margin-bottom: 35px;
+    padding-top: 20px;
   }
 
 }

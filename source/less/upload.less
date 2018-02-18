@@ -8,8 +8,8 @@
 }
 
 .upload__invitation {
-  margin-top: 45px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 45px;
   padding: 0 40px;
 
   font-family: "opensans", "Arial", sans-serif;
@@ -83,7 +83,7 @@
   position: relative;
 
   margin: 0 -20px;
-  padding: 40px 40px;
+  padding: 20px 40px 32px;
 
   border-bottom: 1px solid #dddfe0;
 }
@@ -110,7 +110,7 @@
       display: block;
       width: 10px;
       height: 10px;
-      margin-top: -7px;
+      margin-top: -10px;
 
       background: #f2f2f2;
       border: 2px solid #d22856;
@@ -196,7 +196,8 @@
 
 @media screen and (min-width: 660px) {
   .upload__invitation {
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
     font-family: "opensans", "Arial", sans-serif;
     font-size: 18px;
@@ -213,10 +214,12 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding: 60px 0;
+    padding: 60px 0 50px;
   }
 
   .upload__editor-item {
+    width: 24px;
+    height: 24px;
     margin: 0;
   }
 
@@ -238,12 +241,12 @@
 
   .upload__editor-tool {
     align-items: center;
-    padding: 25px 20px 20px 0;
+    padding: 25px 20px 25px 0;
 
     border-bottom: 1px solid #dddfe0;
 
       &:first-child {
-        padding-top: 0;
+        padding-top: 10px;
       }
   }
 
@@ -267,6 +270,14 @@
     margin-top: -1px;
 
     background: #000000;
+
+      &::after {
+        margin-top: -7px;
+      }
+  }
+
+  .range--brightness-position::after {
+    right: 47%;
   }
 
   .upload__verification {
@@ -287,7 +298,8 @@
 
 @media screen and (min-width: 960px) {
   .upload__invitation {
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 70px;
   }
 
   .upload__wrapper {
@@ -297,6 +309,19 @@
   .upload__editor {
     padding-left: 80px;
     padding-right: 65px;
+  }
+
+  .upload__editor-tool {
+    padding: 10px 20px 10px 0;
+
+      &:first-child {
+        padding-top: 0;
+      }
+  }
+
+  .upload__editor-item {
+    width: 58px;
+    height: 54px;
   }
 
   .upload__image {
