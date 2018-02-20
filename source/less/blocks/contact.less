@@ -50,6 +50,20 @@
   color: #d22856;
 }
 
+.contact-list__item-mail {
+  cursor: pointer;
+
+    &:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+}
+
 .main-contact::after {
   content: "";
   position: absolute;
@@ -104,6 +118,20 @@
 
   .contact-list__item-address {
     margin-bottom: 0;
+  }
+
+  .contact-list__item-mail {
+    cursor: pointer;
+
+      &:hover {
+        color: #000000;
+        text-decoration: underline;
+      }
+
+      &:active {
+        text-decoration: none;
+        opacity: 0.3;
+      }
   }
 
   .map {
