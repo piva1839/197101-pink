@@ -49,37 +49,20 @@
 
 .upload__editor-item {
   display: inline-block;
-  width: 48px;
-  height: 44px;
+  vertical-align: top;
   margin: 0 12px;
   padding: 0;
+
+  fill: #8d949b;
 
   border: none;
   outline: none;
 
   cursor: pointer;
 
-    /*--resize {
-      background: url("../img/icon-editor-crop.svg") no-repeat;
-      background-position: center 1px;
-      background-size: 100%;
+    &--brightness {
+      margin-top: 5px;
     }
-
-    &--color {
-      background: url("../img/icon-editor-fill.svg") no-repeat;
-      background-position: center 2px;
-      background-size: 100%;
-    }*/
-
-    /*&--brightness {
-      background: url("../img/icon-editor-contrast.svg") no-repeat;
-      background-position: center;
-      background-size: 70%;
-    }*/
-}
-
-.upload__editor-item {
-  fill: #8d949b;
 
     &:hover {
       fill: #b5b9be;
@@ -235,6 +218,12 @@
     width: 24px;
     height: 24px;
     margin: 0;
+
+      &--brightness {
+        width: 17px;
+        height: 17px;
+        margin-left: 4px;
+      }
   }
 
   .upload__image {
@@ -334,8 +323,14 @@
   }
 
   .upload__editor-item {
-    width: 58px;
-    height: 54px;
+    width: 44px;
+    height: 44px;
+
+      &--brightness {
+        width: 33px;
+        height: 33px;
+        margin-left: 6px;
+      }
   }
 
   .upload__image {
