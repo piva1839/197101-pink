@@ -35,11 +35,7 @@
           <div class="menu-bar__logo">
             <a class="menu-bar__logo-link" href="index.html">
               <img class="menu-bar__logo-image" src="img/logo-pink-white-mobile.svg" alt="Logo" width="76" height="23">
-            </a>
-            <a class="menu-bar__logo-link" href="index.html">
               <svg class="menu-bar__logo-image--tablet" width="147" height="40"><use xlink:href="#logo-tablet"></use></svg>
-            </a>
-            <a class="menu-bar__logo-link" href="index.html">
               <img class="menu-bar__logo-image--desc" src="img/logo-pink-white-desktop.svg" alt="Logo" width="147" height="40">
             </a>
           </div>
@@ -60,7 +56,7 @@
                 <a class="menu-list__link menu-list__link--active" href="#">Конкурс</a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="https://htmlacademy.ru/profile/piva1839">HTML Academy</a>
+                <a class="menu-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -82,104 +78,133 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="invitation-subtext">Пожалуйста, заполните форму ниже:</span>
         </p>
-      </div>
 
-      <form class="form" name="form" id="form" method="post" action="https://echo.htmlacademy.ru">
+        <form class="form" name="form" id="form" method="post" action="https://echo.htmlacademy.ru">
 
-        <div class="form-block name-block">
-          <div class="name-block__wrapper">
-            <div class="name-block__items">
-              <div class="name-block__item">
-        				<label class="input-label" for="sername">Фамилия:</label>
-        				<input class="form-field" type="text" name="sername" id="sername" value="" placeholder="Укажите фамилию*" required>
-              </div>
-              <div class="name-block__item">
-        				<label class="input-label" for="name">Имя:</label>
-        				<input class="form-field" type="text" name="name" id="name" value="" placeholder="Введите ваше имя*" required>
-              </div>
-              <div class="name-block__item">
-                <label class="input-label" for="middle-name">Отчество:</label>
-        				<input class="form-field form-field--margin-bottom" type="text" name="middle-name" id="middle-name" value="" placeholder="Ну и отчество тоже">
+          <div class="form-block name-block">
+            <div class="name-block__wrapper">
+              <div class="name-block__items">
+                <div class="name-block__item">
+          				<label class="input-label" for="sername">Фамилия:</label>
+          				<input class="form-field" type="text" name="sername" id="sername" value="" placeholder="Укажите фамилию*" required>
+                </div>
+                <div class="name-block__item">
+          				<label class="input-label" for="name">Имя:</label>
+          				<input class="form-field" type="text" name="name" id="name" value="" placeholder="Введите ваше имя*" required>
+                </div>
+                <div class="name-block__item">
+                  <label class="input-label" for="middle-name">Отчество:</label>
+          				<input class="form-field form-field--margin-bottom" type="text" name="middle-name" id="middle-name" value="" placeholder="Ну и отчество тоже">
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="form-block progress-block">
-          <div class="progress-block__wrapper">
-            <fieldset class="progress-block__content">
-              <legend class="progress-block__title">
-                Ваши безбашенные достижения в путешествии
-              </legend>
-              <div class="progress-block__modules">
-                <div class="progress-block__module">
-                  <input class="form-checkbox" type="checkbox" name="selfie" id="selfie" value="selfie" checked><label class="checkbox-label" for="selfie"> Сделал селфи с акулой</label>
-                  <input class="form-checkbox" type="checkbox" name="sun" id="sun" value="sun" checked><label class="checkbox-label" for="sun"> Обгорел на пляже</label>
+          <div class="form-block progress-block">
+            <div class="progress-block__wrapper">
+              <fieldset class="progress-block__content">
+                <legend class="progress-block__title">
+                  Ваши безбашенные достижения в путешествии
+                </legend>
+                <div class="progress-block__modules">
+                  <div class="progress-block__module">
+                    <label class="checkbox-label" for="selfie">
+                      <input class="form-checkbox" type="checkbox" name="selfie" id="selfie" value="selfie" checked> Сделал селфи с акулой
+                      <span class="checkbox-label__identificator"></span>
+                    </label>
+                    <label class="checkbox-label" for="sun">
+                      <input class="form-checkbox" type="checkbox" name="sun" id="sun" value="sun" checked> Обгорел на пляже
+                      <span class="checkbox-label__identificator"></span>
+                    </label>
+                  </div>
+                  <div class="progress-block__module">
+                    <label class="checkbox-label" for="star">
+                      <input class="form-checkbox" type="checkbox" name="star" id="star" value="star"> Видел Чака Норриса
+                      <span class="checkbox-label__identificator"></span>
+                    </label>
+                    <label class="checkbox-label" for="souvenir">
+                      <input class="form-checkbox" type="checkbox" name="souvenir" id="souvenir" value="souvenir"> Накупил сувениров
+                      <span class="checkbox-label__identificator"></span>
+                    </label>
+                  </div>
+                  <div class="progress-block__module">
+                    <label class="checkbox-label" for="tower">
+                      <input class="form-checkbox" type="checkbox" name="tower" id="tower" value="tower" checked> Удержал башню
+                      <span class="checkbox-label__identificator"></span>
+                    </label>
+                    <label class="checkbox-label checkbox-label--margin-bottom" for="hotel">
+                      <input class="form-checkbox" type="checkbox" name="hotel" id="hotel" value="hotel"> Разгромил отель
+                      <span class="checkbox-label__identificator"></span>
+                    </label>
+                  </div>
                 </div>
-                <div class="progress-block__module">
-                  <input class="form-checkbox" type="checkbox" name="star" id="star" value="star"><label class="checkbox-label" for="star"> Видел Чака Норриса</label>
-                  <input class="form-checkbox" type="checkbox" name="souvenir" id="souvenir" value="souvenir"><label class="checkbox-label" for="souvenir"> Накупил сувениров</label>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="form-block contact-block">
+            <div class="contact-block__wrapper">
+              <fieldset class="contact-block__content">
+                <legend class="contact-block__title">
+                  Контактная информация
+                </legend>
+                <div class="contact-block__modules">
+                  <div class="contact-block__module">
+                  	<label class="input-label" for="tel">Номер телефона</label>
+                  	<input class="form-field form-field--phone-icon" type="tel" name="tel" id="tel" value="" placeholder="Номер, пожалуйста">
+                  </div>
+                  <div class="contact-block__module">
+                    <label class="input-label" for="email">Адрес почты</label>
+                  	<input class="form-field form-field--margin-bottom form-field--mail-icon" type="email" name="email" id="email" value="" placeholder="Введите почту*" required>
+                  </div>
                 </div>
-                <div class="progress-block__module">
-                  <input class="form-checkbox" type="checkbox" name="tower" id="tower" value="tower" checked><label class="checkbox-label" for="tower"> Удержал башню</label>
-                  <input class="form-checkbox" type="checkbox" name="hotel" id="hotel" value="hotel"><label class="checkbox-label checkbox-label--margin-bottom" for="hotel"> Разгромил отель</label>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="form-block app-block">
+            <div class="app-block__wrapper">
+              <fieldset class="app-block__content">
+                <legend class="app-block__title">
+                  С каким приложением путешествовали?
+                </legend>
+                <div class="app-block__items">
+                  <label class="radio-label" for="ios">
+                    <input class="form-radio" type="radio" name="user-app" id="ios" value="ios" checked> Pink для iOS
+                    <span class="radio-label__identificator"></span>
+                  </label>
+                  <label class="radio-label" for="android">
+                    <input class="form-radio" type="radio" name="user-app" id="android" value="android"> Pink для Android
+                    <span class="radio-label__identificator"></span>
+                  </label>
+                  <label class="radio-label" for="windows">
+                    <input class="form-radio" type="radio" name="user-app" id="windows" value="windows"> Windows Phone
+                    <span class="radio-label__identificator"></span>
+                  </label>
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
           </div>
-        </div>
 
-        <div class="form-block contact-block">
-          <div class="contact-block__wrapper">
-            <fieldset class="contact-block__content">
-              <legend class="contact-block__title">
-                Контактная информация
-              </legend>
-              <div class="contact-block__modules">
-                <div class="contact-block__module">
-                	<label class="input-label" for="tel">Номер телефона</label>
-                	<input class="form-field" type="tel" name="tel" id="tel" value="" placeholder="Номер, пожалуйста">
-                </div>
-                <div class="contact-block__module">
-                  <label class="input-label" for="email">Адрес почты</label>
-                	<input class="form-field form-field--margin-bottom" type="email" name="email" id="email" value="" placeholder="Введите почту*" required>
-                </div>
-              </div>
-            </fieldset>
+          <div class="form-block text-block">
+            <div class="text-block__wrapper">
+              <fieldset class="text-block__content">
+                <legend class="text-block__title" for="user-comment">Опишите свои эмоции</legend><textarea class="form-area" name="user-comment" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
+              </fieldset>
+            </div>
           </div>
-        </div>
 
-        <div class="form-block app-block">
-          <div class="app-block__wrapper">
-            <fieldset class="app-block__content">
-              <legend class="app-block__title">
-                С каким приложением путешествовали?
-              </legend>
-                <input class="form-radio" type="radio" name="user-app" id="ios" value="ios" checked><label class="radio-label" for="ios"> Pink для iOS</label>
-                <input class="form-radio" type="radio" name="user-app" id="android" value="android"><label class="radio-label" for="android"> Pink для Android</label>
-                <input class="form-radio" type="radio" name="user-app" id="windows" value="windows"><label class="radio-label" for="windows"> Windows Phone</label>
-            </fieldset>
+          <div class="form-block form-confirm">
+            <div class="form-confirm__wrapper">
+              <button class="button button--form" type="submit">
+                Отправить форму
+              </button>
+              <span class="required-fields"><sup class="star">*</sup>-Обязательные поля</span>
+            </div>
           </div>
-        </div>
 
-        <div class="form-block text-block">
-          <div class="text-block__wrapper">
-            <fieldset class="text-block__content">
-              <legend class="text-block__title" for="user-comment">Опишите свои эмоции</legend><textarea class="form-area" name="user-comment" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
-            </fieldset>
-          </div>
-        </div>
-
-        <div class="form-block form-confirm">
-          <div class="form-confirm__wrapper">
-            <button class="button button--form" type="submit">
-              Отправить форму
-            </button>
-            <span class="required-fields"><sup class="star">*</sup>-Обязательные поля</span>
-          </div>
-        </div>
-
-      </form>
+        </form>
+      </div>
     </section>
 
     <footer class="page-footer">
