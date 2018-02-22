@@ -54,47 +54,47 @@
     &:first-child {
       display: none;
     }
-}
 
-.standart-price {
-  position: relative;
-  padding: 20px;
+    &--hit-price {
+      position: relative;
+      padding: 20px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -1px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -1px;
 
-      display: block;
-      width: 74px;
-      height: 73px;
+          display: block;
+          width: 74px;
+          height: 73px;
 
-      background: url("../img/bg-hit.svg") no-repeat;
-      background-position: center;
-      background-size: 100%;
+          background: url("../img/bg-hit.svg") no-repeat;
+          background-position: center;
+          background-size: 100%;
 
-      text-align: center;
-    }
+          text-align: center;
+        }
 
-    &::after {
-      content: "Хит";
-      position: absolute;
-      top: 4px;
-      left: 3px;
+        &::after {
+          content: "Хит";
+          position: absolute;
+          top: 4px;
+          left: 3px;
 
-      display: block;
-      width: 74px;
-      height: 73px;
+          display: block;
+          width: 74px;
+          height: 73px;
 
-      font-family: "opensansbold", "Arial", sans-serif;
-      font-size: 14px;
-      line-height: 30px;
-      color: #ffffff;
-      text-align: center;
-      text-transform: uppercase;
+          font-family: "opensansbold", "Arial", sans-serif;
+          font-size: 14px;
+          line-height: 30px;
+          color: #ffffff;
+          text-align: center;
+          text-transform: uppercase;
 
-      transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
     }
 }
 
@@ -127,7 +127,7 @@
   text-align: center;
 }
 
-.sliders__toggle {
+.price__toggle {
   display: inline-block;
   vertical-align: top;
   width: 6px;
@@ -140,6 +140,7 @@
   border-radius: 50%;
 
   font-size: 0px;
+  text-align: center;
 
   cursor: pointer;
 
@@ -172,10 +173,6 @@
     border-top: 3px solid #f2f2f2;
   }
 
-  .table__col--empty {
-    border-left: 3px solid #f2f2f2;
-  }
-
   .table__col {
     width: 145px;
     padding: 8px 10px;
@@ -185,6 +182,7 @@
 
       &--empty {
         background: #f2f2f2;
+        border-left: 3px solid #f2f2f2;
       }
 
       &--font {
@@ -194,6 +192,14 @@
 
       &:first-child {
         display: table-cell;
+      }
+
+      &--font {
+        font-family: "opensans", "Arial", sans-serif;
+        font-size: 14px;
+        line-height: 30px;
+
+        text-transform: none;
       }
     }
 
@@ -209,14 +215,6 @@
       font-size: 18px;
       line-height: 30px;
       color: #a4a7ac;
-    }
-
-    .table__col--font {
-      font-family: "opensans", "Arial", sans-serif;
-      font-size: 14px;
-      line-height: 30px;
-
-      text-transform: none;
     }
 
     .table__option {
@@ -250,10 +248,10 @@
   .table__col {
     padding-top: 15px;
     padding-bottom: 15px;
-  }
 
-  .table__col--height {
-    padding: 20px 0;
+      &--height {
+        padding: 20px 0;
+      }
   }
 
   .price__toggles {
