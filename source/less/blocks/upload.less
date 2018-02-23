@@ -20,7 +20,10 @@
 }
 
 .upload__editor {
+  max-width: 460px;
+  margin: 0 auto;
   padding-top: 20px;
+
   background: #f2f2f2;
 }
 
@@ -79,7 +82,8 @@
   order: 1;
   position: relative;
 
-  margin: 0 -20px;
+  max-width: 460px;
+  margin: 0 auto;
   padding: 20px 40px 32px;
 
   border-bottom: 1px solid #dddfe0;
@@ -211,6 +215,7 @@
     display: flex;
     flex-wrap: wrap;
 
+    max-width: 960px;
     padding: 60px 0 50px;
   }
 
@@ -227,7 +232,7 @@
   }
 
   .upload__image {
-    width: 50%;
+    width: 40%;
   }
 
   .upload__image img {
@@ -235,9 +240,13 @@
   }
 
   .upload__editor-tools {
+    position: relative;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     flex-grow: 1;
+    height: auto;
+
     margin-left: 20px;
     padding-left: 20px;
   }
@@ -283,15 +292,19 @@
     right: 47%;
   }
 
-  .upload__verification {
-      &--margin {
+  .upload__verification--margin {
         margin: 0;
-        margin-top: auto;
         padding: 0;
         padding-right: 20px;
 
         border: none;
-      }
+    }
+
+    .upload__verification {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0;
     }
 
     .button--confirm {
@@ -312,6 +325,10 @@
   .upload__editor {
     padding-left: 80px;
     padding-right: 65px;
+  }
+
+  .upload__image {
+    width: 460px;
   }
 
   .upload__editor-tool {

@@ -8,12 +8,28 @@
   text-align: center;
 }
 
-.page-footer__logo {
+.page-footer__img {
   cursor: pointer;
 
-    &:active {
-      opacity: 0.3;
+    &--font {
+      fill: #000000;
     }
+
+    &--glass {
+      fill: #d22856;
+    }
+}
+
+.page-footer__img:hover .page-footer__img--font {
+  fill: #d22856;
+}
+
+.page-footer__img:active .page-footer__img--font {
+  fill: #000000;
+}
+
+.page-footer__img:active {
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -67,26 +83,6 @@
   line-height: 18px;
   color: #283645;
   text-decoration: none;
-/*
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2px;
-      right: 0;
-
-      display: block;
-      width: 38px;
-      height: 45px;
-
-      background: url("../img/htmlacademy-red.svg") no-repeat;
-      background-position: center;
-      background-size: 100%;
-    }
-
-    &:active::after {
-      opacity: 0.3;
-    }
-*/
 }
 
 @media screen and (min-width: 660px) {
